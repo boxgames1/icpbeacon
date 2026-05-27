@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ICP Beacon — Turn old gym leads into new memberships</title>
-  <meta name="description" content="ICP Beacon helps gyms and fitness studios reactivate old leads and ex-members with simple, compliant outreach campaigns." />
+  <meta name="description" content="Simple reactivation pilot for gyms and fitness studios. No new software. No upfront cost. We only get paid if it works." />
+  <meta name="keywords" content="gym member reactivation, fitness studio leads, ex-member outreach, gym lead reactivation, fitness marketing, gym pilot program, reactivate gym members, boutique studio marketing" />
   <meta property="og:title" content="ICP Beacon — Turn old gym leads into new memberships" />
-  <meta property="og:description" content="Reactivate ex-members and old leads with a simple pilot for gyms and fitness studios." />
+  <meta property="og:description" content="Simple reactivation pilot for gyms and fitness studios. No new software. No upfront cost. We only get paid if it works." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://icpbeacon.com" />
   <link rel="icon" type="image/svg" href="./favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -237,6 +239,7 @@
     }
     .btn-secondary:hover { background: var(--color-surface-2); }
 
+    /* ── HERO ── */
     .hero {
       padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 6rem);
     }
@@ -274,7 +277,7 @@
       line-height: 1.02;
       font-weight: 800;
       letter-spacing: -0.055em;
-      max-width: 11ch;
+      max-width: 13ch;
     }
     .hero-copy p {
       margin-top: var(--space-5);
@@ -378,6 +381,7 @@
       margin-top: var(--space-1);
     }
 
+    /* ── SECTION BASE ── */
     .section {
       padding: clamp(3rem, 7vw, 5rem) 0;
     }
@@ -395,6 +399,7 @@
     }
     .section-head p { color: var(--color-text-muted); }
 
+    /* ── GRIDS ── */
     .steps,
     .proof-grid,
     .faq-grid,
@@ -407,6 +412,7 @@
     .fit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .faq-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
+    /* ── CARDS ── */
     .card {
       height: 100%;
       padding: var(--space-6);
@@ -469,6 +475,158 @@
       color: var(--color-text-muted);
     }
 
+    /* ── SOUND FAMILIAR SECTION ── */
+    .pain-section {
+      padding: clamp(3rem, 7vw, 5rem) 0;
+      background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface));
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .pain-left h2 {
+      font-size: var(--text-xl);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+      margin-bottom: var(--space-6);
+    }
+    .pain-cards {
+      display: grid;
+      gap: var(--space-4);
+    }
+    .pain-card {
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      background: color-mix(in srgb, var(--color-surface-2) 88%, transparent);
+    }
+    .pain-card h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-2);
+    }
+    .pain-card p {
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .pain-callout {
+      margin-top: var(--space-6);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-primary);
+      background: color-mix(in srgb, var(--color-primary) 7%, var(--color-surface-2));
+      font-size: var(--text-base);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+      font-style: italic;
+    }
+    .pain-right {
+      display: grid;
+      gap: var(--space-5);
+      padding-top: var(--space-8);
+    }
+    .stat-card {
+      padding: var(--space-6);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      background: color-mix(in srgb, var(--color-surface-2) 94%, transparent);
+      box-shadow: var(--shadow-md);
+    }
+    .stat-card .stat-number {
+      font-size: clamp(2.4rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      color: var(--color-primary);
+    }
+    .stat-card .stat-label {
+      margin-top: var(--space-3);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+      line-height: 1.5;
+    }
+
+    /* ── ABOUT / FOUNDER SECTION ── */
+    .about-section {
+      padding: clamp(3rem, 7vw, 5rem) 0;
+      border-top: 1px solid var(--color-border);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(var(--space-8), 6vw, var(--space-16));
+      align-items: center;
+    }
+    .about-photo-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .about-photo-wrap::before {
+      content: "";
+      position: absolute;
+      inset: -10px;
+      border-radius: calc(var(--radius-xl) + 14px);
+      border: 2px solid var(--color-primary-highlight);
+      pointer-events: none;
+    }
+    .about-photo {
+      width: 280px;
+      max-width: 280px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+    .about-copy {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .about-copy h2 {
+      font-size: var(--text-xl);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+    }
+    .about-copy p {
+      color: var(--color-text-muted);
+      max-width: 60ch;
+    }
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+    .about-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      border: 1px solid var(--color-border);
+      background: color-mix(in srgb, var(--color-surface-offset) 80%, transparent);
+      color: var(--color-text-muted);
+    }
+    .about-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--color-primary);
+      font-weight: 700;
+      font-size: var(--text-sm);
+      transition: gap var(--transition-interactive);
+    }
+    .about-cta:hover { gap: 0.65rem; }
+
+    /* ── FORM ── */
     .form-shell {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
@@ -528,6 +686,7 @@
       background: transparent;
     }
 
+    /* ── FOOTER ── */
     .footer {
       padding: var(--space-10) 0 var(--space-12);
       border-top: 1px solid var(--color-border);
@@ -568,6 +727,7 @@
       color: var(--color-text);
     }
 
+    /* ── MODALS ── */
     .modal {
       position: fixed;
       inset: 0;
@@ -641,18 +801,24 @@
       gap: var(--space-2);
     }
 
+    /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       .hero-grid,
       .form-shell,
       .steps,
       .proof-grid,
       .faq-grid,
-      .fit-grid {
+      .fit-grid,
+      .pain-grid,
+      .about-grid {
         grid-template-columns: 1fr;
       }
       h1 { max-width: 12ch; }
       .tally-wrap { min-height: 680px; }
       .tally-wrap iframe { min-height: 640px; }
+      .pain-right { padding-top: 0; }
+      .about-photo-wrap { justify-self: center; }
+      .about-photo { max-width: 240px; width: 240px; }
     }
 
     @media (max-width: 760px) {
@@ -698,6 +864,7 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
+      .about-photo { max-width: 200px; width: 200px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -730,52 +897,54 @@
   </header>
 
   <main id="main-content">
+
+    <!-- ── HERO ── -->
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Gym member reactivation</div>
-          <h1>Turn old gym leads into new memberships.</h1>
+          <h1>You already paid for those leads. Time to get something back.</h1>
           <p>
-            ICP Beacon helps gyms and fitness studios reactivate ex-members and stale leads with a simple pilot built around their existing database, without adding more tools, dashboards, or heavy implementation.
+            We run a short SMS reactivation pilot on your cold contact list — ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#pilot">Apply for the pilot</a>
             <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
           </div>
           <div class="hero-meta" aria-label="Key attributes">
-            <span>Simple pilot</span>
+            <span>No upfront cost</span>
             <span>For gyms and studios</span>
-            <span>Low implementation overhead</span>
+            <span>Results in 2–3 weeks</span>
           </div>
         </div>
 
         <aside class="hero-card" aria-label="Pilot summary">
           <div class="metric-stack">
             <div class="metric-main">
-              <div class="metric-label">What this solves</div>
-              <div class="metric-value">Unused lists</div>
-              <div class="metric-sub">Old leads and ex-members often sit untouched while acquisition costs keep climbing.</div>
+              <div class="metric-label">What goes in</div>
+              <div class="metric-value">Your cold list</div>
+              <div class="metric-sub">An export of old leads, ex-members or failed trials.</div>
             </div>
             <div class="mini-grid">
               <div class="mini-card">
-                <div class="metric-label">Input</div>
-                <strong>Your existing list</strong>
-                <span>A simple export of old prospects or former members.</span>
-              </div>
-              <div class="mini-card">
                 <div class="metric-label">Execution</div>
-                <strong>Lean outreach pilot</strong>
-                <span>Fast setup designed for testing demand before adding complexity.</span>
+                <strong>SMS reactivation pilot</strong>
+                <span>We handle the outreach. You just review the replies.</span>
               </div>
               <div class="mini-card">
                 <div class="metric-label">Focus</div>
-                <strong>Reactivation</strong>
-                <span>Bring back conversations from leads that already know your brand.</span>
+                <strong>Booked conversations</strong>
+                <span>We push toward visit intent or membership calls.</span>
               </div>
               <div class="mini-card">
-                <div class="metric-label">Fit</div>
-                <strong>Owner-friendly</strong>
-                <span>Clear offer, easy to understand, no new platform to learn.</span>
+                <div class="metric-label">Result</div>
+                <strong>Performance-based</strong>
+                <span>You only pay when we produce a result.</span>
+              </div>
+              <div class="mini-card">
+                <div class="metric-label">Input</div>
+                <strong>Your cold list</strong>
+                <span>An export of old leads, ex-members or failed trials.</span>
               </div>
             </div>
           </div>
@@ -783,34 +952,109 @@
       </div>
     </section>
 
+    <!-- ── SOUND FAMILIAR? ── -->
+    <section class="pain-section" aria-labelledby="pain-heading">
+      <div class="container">
+        <div class="pain-grid">
+          <div class="pain-left">
+            <h2 id="pain-heading">Sound familiar?</h2>
+            <div class="pain-cards">
+              <div class="pain-card">
+                <h3>That list from 8 months ago</h3>
+                <p>You stopped calling those 300 leads. The front desk moved on. The database just... sits there.</p>
+              </div>
+              <div class="pain-card">
+                <h3>Email blasts that go nowhere</h3>
+                <p>You've tried the newsletter. 4 opens, zero replies, one unsubscribe.</p>
+              </div>
+              <div class="pain-card">
+                <h3>Acquisition costs keep climbing</h3>
+                <p>Every new lead costs more. Meanwhile, people who already know your gym are being ignored.</p>
+              </div>
+            </div>
+            <blockquote class="pain-callout">
+              That list isn't dead. It just hasn't had the right message yet.
+            </blockquote>
+          </div>
+          <div class="pain-right">
+            <div class="stat-card">
+              <div class="stat-number">40–50%</div>
+              <div class="stat-label">average SMS reply rate on cold reactivation lists (vs. 3–8% for email)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2–3 weeks</div>
+              <div class="stat-label">typical time from list upload to first booked conversations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
     <section class="section" id="how-it-works">
       <div class="container">
         <div class="section-head">
           <h2>How the pilot works</h2>
           <p>
-            The model is intentionally lightweight. The goal is to validate whether dormant contacts can produce renewed interest without creating operational drag for the gym.
+            Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.
           </p>
         </div>
         <div class="steps">
           <article class="card">
             <div class="card-kicker">01</div>
-            <h3>Share the basics</h3>
-            <p>The pilot starts with a short qualification form and a review of whether the gym is a good fit for a reactivation campaign.</p>
+            <h3>Send us your list</h3>
+            <p>A simple CSV export of old leads or ex-members. No special format needed. We review it and confirm fit within 24h.</p>
           </article>
           <article class="card">
             <div class="card-kicker">02</div>
-            <h3>Run a focused pilot</h3>
-            <p>A small pilot is designed around old leads or ex-members so the gym can test the idea without committing to a large rollout.</p>
+            <h3>We run the pilot</h3>
+            <p>We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.</p>
           </article>
           <article class="card">
             <div class="card-kicker">03</div>
-            <h3>Measure real traction</h3>
-            <p>The only thing that matters is whether the campaign creates renewed conversations, visit intent, or membership opportunities from the existing base.</p>
+            <h3>You pay for results</h3>
+            <p>If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn't, you owe nothing.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ── ABOUT / FOUNDER ── -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <img
+              class="about-photo"
+              src="./profile.png"
+              alt="Founder of ICP Beacon"
+              width="280"
+              height="280"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-copy">
+            <div class="eyebrow">Who's behind this</div>
+            <h2 id="about-heading">Built lean, on purpose.</h2>
+            <p>
+              I'm a software engineer with 12 years building products for companies that needed to do more with less. I've seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.
+            </p>
+            <p>
+              ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don't have a marketing department or time to learn new platforms.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">12 yrs in tech</span>
+              <span class="about-tag">Ex-UserTesting.com</span>
+              <span class="about-tag">Lean-first approach</span>
+              <span class="about-tag">Spain · US East Coast</span>
+            </div>
+            <a class="about-cta" href="#pilot">→ Apply for the pilot</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY REACTIVATION ── -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -834,6 +1078,7 @@
       </div>
     </section>
 
+    <!-- ── WHO IT FITS ── -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -865,6 +1110,7 @@
       </div>
     </section>
 
+    <!-- ── FAQ ── -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -875,33 +1121,34 @@
         </div>
         <div class="faq-grid">
           <article class="card">
-            <h3>Is this for chains or independent gyms?</h3>
-            <p>The initial focus is on independent gyms and studios where decisions can be made quickly and the test can stay lean.</p>
+            <h3>What do you need from me?</h3>
+            <p>Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.</p>
           </article>
           <article class="card">
-            <h3>Does this require a big implementation?</h3>
-            <p>No. The whole premise is to keep the first version simple and validate the opportunity before introducing more complexity.</p>
+            <h3>How does pricing work?</h3>
+            <p>Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.</p>
           </article>
           <article class="card">
-            <h3>Can this work outside one country?</h3>
-            <p>Yes, as long as the gym is a good fit operationally and the pilot scope remains simple enough to run cleanly.</p>
+            <h3>Does this work in my country?</h3>
+            <p>Yes. We're currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ── FORM ── -->
     <section class="section" id="pilot">
       <div class="container form-shell">
         <div class="form-note">
           <div class="eyebrow">Free pilot application</div>
-          <h2>Apply for a simple pilot.</h2>
+          <h2>Apply for a free pilot.</h2>
           <p>
-            This short form is the easiest way to see whether your gym or studio is a strong fit for a member reactivation pilot.
+            Takes 2 minutes. We review every application and reply within 24h. No commitment required.
           </p>
           <ul>
-            <li>Best for gyms and studios with an existing historical contact base.</li>
-            <li>Designed to qualify fit before any deeper conversation.</li>
-            <li>Kept intentionally short to reduce friction.</li>
+            <li>Best for gyms with 200+ contacts in their existing database.</li>
+            <li>Performance-based — you only pay if we produce results.</li>
+            <li>No new software, no contracts, no setup fees.</li>
           </ul>
         </div>
         <div class="tally-wrap">
@@ -919,7 +1166,7 @@
     <div class="container footer-row">
       <div class="footer-brand">
         <img src="./logo.svg" alt="ICP Beacon" width="120" height="27" loading="lazy" />
-        <span>Lean member reactivation for gyms and fitness studios.</span>
+        <span>Lean reactivation for gyms and studios. No result, no fee.</span>
       </div>
       <div class="footer-links" aria-label="Legal links">
         <button type="button" data-open-modal="privacy">Privacy policy</button>
@@ -928,6 +1175,7 @@
     </div>
   </footer>
 
+  <!-- ── PRIVACY MODAL ── -->
   <div class="modal" id="modal-privacy" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-panel">
@@ -974,7 +1222,7 @@
         </section>
         <section>
           <h3>International processing</h3>
-          <p>Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor’s own location, subject to applicable safeguards where required.</p>
+          <p>Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor's own location, subject to applicable safeguards where required.</p>
         </section>
         <section>
           <h3>Policy updates</h3>
@@ -984,6 +1232,7 @@
     </div>
   </div>
 
+  <!-- ── TERMS MODAL ── -->
   <div class="modal" id="modal-terms" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="terms-title">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-panel">
@@ -1030,7 +1279,7 @@
         </section>
         <section>
           <h3>Limitation</h3>
-          <p>To the fullest extent permitted by law, the site is provided on an “as is” and “as available” basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p>
+          <p>To the fullest extent permitted by law, the site is provided on an "as is" and "as available" basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p>
         </section>
       </div>
     </div>
