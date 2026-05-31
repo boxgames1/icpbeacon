@@ -3,17 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICP Beacon — Turn old gym leads into new memberships</title>
-  <meta name="description" content="Simple reactivation pilot for gyms and fitness studios. No new software. No upfront cost. We only get paid if it works." />
-  <meta name="keywords" content="gym member reactivation, fitness studio leads, ex-member outreach, gym lead reactivation, fitness marketing, gym pilot program, reactivate gym members, boutique studio marketing" />
-  <meta property="og:title" content="ICP Beacon — Turn old gym leads into new memberships" />
-  <meta property="og:description" content="Simple reactivation pilot for gyms and fitness studios. No new software. No upfront cost. We only get paid if it works." />
+  <title>ICP Beacon — Reactivate Old Gym Leads. No Upfront Cost.</title>
+  <meta name="description" content="Turn cold contacts into booked conversations. ICP Beacon runs a short SMS reactivation pilot on your existing list — ex-members, old enquiries, stale trials. No software. No upfront cost. Pay only for results." />
+  <meta name="keywords" content="gym member reactivation, fitness studio leads, ex-member outreach, gym lead reactivation, fitness marketing, gym pilot program, reactivate gym members, boutique studio marketing, SMS reactivation gym, gym CRM alternative, fitness membership recovery" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ICP Beacon" />
+  <link rel="canonical" href="https://icpbeacon.com" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ICP Beacon — Reactivate Old Gym Leads. No Upfront Cost." />
+  <meta property="og:description" content="Turn cold contacts into booked conversations. SMS reactivation pilot for gyms and fitness studios. Pay only when it works." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://icpbeacon.com" />
-  <link rel="icon" type="image/svg" href="./favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://icpbeacon.com/og-image.png" />
+  <meta property="og:site_name" content="ICP Beacon" />
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ICP Beacon — Reactivate Old Gym Leads. No Upfront Cost." />
+  <meta name="twitter:description" content="Turn cold contacts into booked conversations. SMS reactivation pilot for gyms and fitness studios. Pay only when it works." />
+  <meta name="twitter:image" content="https://icpbeacon.com/og-image.png" />
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ICP Beacon",
+    "url": "https://icpbeacon.com",
+    "description": "SMS reactivation pilot for gyms and fitness studios. No upfront cost. Pay only for results.",
+    "areaServed": ["ES", "US"],
+    "serviceType": "Gym Member Reactivation",
+    "offers": {
+      "@type": "Offer",
+      "pricingType": "PerformanceBased",
+      "description": "Pay per booked conversation or revenue share on memberships sold. No result, no fee."
+    }
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     /* Art direction: conversion-focused gym lead reactivation landing → precise, calm, premium
        Palette: neutral light surfaces + restrained teal accent
@@ -823,41 +851,30 @@
 
     @media (max-width: 760px) {
       .nav {
-        min-height: 72px;
-        align-items: flex-start;
-        flex-direction: column;
+        min-height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
         padding: var(--space-3) 0;
+        gap: var(--space-2);
       }
+      .brand { flex: 1 1 auto; }
+      .brand img.logo { width: 130px; }
       .nav-links {
-        width: 100%;
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        flex-wrap: nowrap;
       }
-      .brand img.logo { width: 136px; }
-      .hero {
-        padding-top: var(--space-10);
-      }
-      .hero-card,
-      .card,
-      .form-shell,
-      .modal-panel { padding: var(--space-5); }
+      .nav-link { display: none; }
+      .cta-inline { white-space: nowrap; }
+      .hero { padding-top: var(--space-10); }
+      .hero-card, .card, .form-shell, .modal-panel { padding: var(--space-5); }
       .mini-grid { grid-template-columns: 1fr; }
-      .hero-actions,
-      .footer-row,
-      .footer-links {
-        width: 100%;
-      }
-      .hero-actions .btn,
-      .nav-links .cta-inline {
-        flex: 1 1 auto;
-      }
-      .footer-row {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-      .modal {
-        align-items: end;
-        padding: var(--space-2);
-      }
+      .hero-actions, .footer-row, .footer-links { width: 100%; }
+      .hero-actions .btn { flex: 1 1 auto; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+      .modal { align-items: end; padding: var(--space-2); }
       .modal-panel {
         width: 100%;
         max-height: 92dvh;
@@ -914,25 +931,6 @@
       color: var(--color-primary);
     }
 
-    /* ── MOBILE NAV FIX ── */
-    @media (max-width: 760px) {
-      .nav {
-        min-height: auto !important;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        align-items: center !important;
-        padding: var(--space-3) 0 !important;
-        gap: var(--space-2) !important;
-      }
-      .nav-links {
-        width: auto;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        gap: var(--space-2);
-      }
-      .nav-link { display: none; }
-      .cta-inline { flex: none !important; }
-    }
   </style>
 </head>
 <body>
@@ -950,7 +948,6 @@
           <button class="lang-btn active" data-lang="en" aria-pressed="true">🇺🇸 EN</button>
           <button class="lang-btn" data-lang="es" aria-pressed="false">🇪🇸 ES</button>
         </div>
-
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
@@ -961,15 +958,13 @@
 
   <main id="main-content">
 
-    <!-- ── HERO ── -->
+    <!-- HERO -->
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow" data-i18n="hero.eyebrow">Gym member reactivation</div>
           <h1 data-i18n="hero.h1">You already paid for those leads. Time to get something back.</h1>
-          <p>
-            We run a short SMS reactivation pilot on your cold contact list — ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.
-          </p>
+          <p data-i18n="hero.p">We run a short SMS reactivation pilot on your cold contact list — ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#pilot" data-i18n="hero.cta1">Apply for the pilot</a>
             <a class="btn btn-secondary" href="#how-it-works" data-i18n="hero.cta2">See how it works</a>
@@ -980,7 +975,6 @@
             <span data-i18n="hero.meta3">Results in 2–3 weeks</span>
           </div>
         </div>
-
         <aside class="hero-card" aria-label="Pilot summary">
           <div class="metric-stack">
             <div class="metric-main">
@@ -990,24 +984,24 @@
             </div>
             <div class="mini-grid">
               <div class="mini-card">
-                <div class="metric-label">Execution</div>
-                <strong>SMS reactivation pilot</strong>
-                <span>We handle the outreach. You just review the replies.</span>
+                <div class="metric-label" data-i18n="card.exec.label">Execution</div>
+                <strong data-i18n="card.exec.title">SMS reactivation pilot</strong>
+                <span data-i18n="card.exec.sub">We handle the outreach. You just review the replies.</span>
               </div>
               <div class="mini-card">
-                <div class="metric-label">Focus</div>
-                <strong>Booked conversations</strong>
-                <span>We push toward visit intent or membership calls.</span>
+                <div class="metric-label" data-i18n="card.focus.label">Focus</div>
+                <strong data-i18n="card.focus.title">Booked conversations</strong>
+                <span data-i18n="card.focus.sub">We push toward visit intent or membership calls.</span>
               </div>
               <div class="mini-card">
-                <div class="metric-label">Result</div>
-                <strong>Performance-based</strong>
-                <span>You only pay when we produce a result.</span>
+                <div class="metric-label" data-i18n="card.result.label">Result</div>
+                <strong data-i18n="card.result.title">Performance-based</strong>
+                <span data-i18n="card.result.sub">You only pay when we produce a result.</span>
               </div>
               <div class="mini-card">
-                <div class="metric-label">Input</div>
-                <strong>Your cold list</strong>
-                <span>An export of old leads, ex-members or failed trials.</span>
+                <div class="metric-label" data-i18n="card.input2.label">Input</div>
+                <strong data-i18n="card.input2.title">Your cold list</strong>
+                <span data-i18n="card.input2.sub">An export of old leads, ex-members or failed trials.</span>
               </div>
             </div>
           </div>
@@ -1015,7 +1009,7 @@
       </div>
     </section>
 
-    <!-- ── SOUND FAMILIAR? ── -->
+    <!-- SOUND FAMILIAR -->
     <section class="pain-section" aria-labelledby="pain-heading">
       <div class="container">
         <div class="pain-grid">
@@ -1024,92 +1018,77 @@
             <div class="pain-cards">
               <div class="pain-card">
                 <h3 data-i18n="pain.card1.h3">That list from 8 months ago</h3>
-                <p>You stopped calling those 300 leads. The front desk moved on. The database just... sits there.</p>
+                <p data-i18n="pain.card1.p">You stopped calling those 300 leads. The front desk moved on. The database just... sits there.</p>
               </div>
               <div class="pain-card">
                 <h3 data-i18n="pain.card2.h3">Email blasts that go nowhere</h3>
-                <p>You've tried the newsletter. 4 opens, zero replies, one unsubscribe.</p>
+                <p data-i18n="pain.card2.p">You’ve tried the newsletter. 4 opens, zero replies, one unsubscribe.</p>
               </div>
               <div class="pain-card">
                 <h3 data-i18n="pain.card3.h3">Acquisition costs keep climbing</h3>
-                <p>Every new lead costs more. Meanwhile, people who already know your gym are being ignored.</p>
+                <p data-i18n="pain.card3.p">Every new lead costs more. Meanwhile, people who already know your gym are being ignored.</p>
               </div>
             </div>
-            <blockquote class="pain-callout">
-              That list isn't dead. It just hasn't had the right message yet.
-            </blockquote>
+            <blockquote class="pain-callout" data-i18n="pain.callout">That list isn’t dead. It just hasn’t had the right message yet.</blockquote>
           </div>
           <div class="pain-right">
             <div class="stat-card">
               <div class="stat-number">40–50%</div>
-              <div class="stat-label">average SMS reply rate on cold reactivation lists (vs. 3–8% for email)</div>
+              <div class="stat-label" data-i18n="pain.stat1">average SMS reply rate on cold reactivation lists (vs. 3–8% for email)</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">2–3 weeks</div>
-              <div class="stat-label">typical time from list upload to first booked conversations</div>
+              <div class="stat-label" data-i18n="pain.stat2">typical time from list upload to first booked conversations</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── HOW IT WORKS ── -->
+    <!-- HOW IT WORKS -->
     <section class="section" id="how-it-works">
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="how.h2">How the pilot works</h2>
-          <p>
-            Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.
-          </p>
+          <p data-i18n="how.p">Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.</p>
         </div>
         <div class="steps">
           <article class="card">
             <div class="card-kicker">01</div>
             <h3 data-i18n="how.step1.h3">Send us your list</h3>
-            <p>A simple CSV export of old leads or ex-members. No special format needed. We review it and confirm fit within 24h.</p>
+            <p data-i18n="how.step1.p">A simple CSV export of old leads or ex-members. No special format needed. We review it and confirm fit within 24h.</p>
           </article>
           <article class="card">
             <div class="card-kicker">02</div>
             <h3 data-i18n="how.step2.h3">We run the pilot</h3>
-            <p>We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.</p>
+            <p data-i18n="how.step2.p">We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.</p>
           </article>
           <article class="card">
             <div class="card-kicker">03</div>
             <h3 data-i18n="how.step3.h3">You pay for results</h3>
-            <p>If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn't, you owe nothing.</p>
+            <p data-i18n="how.step3.p">If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn’t, you owe nothing.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ── ABOUT / FOUNDER ── -->
+    <!-- ABOUT -->
     <section class="about-section" id="about" aria-labelledby="about-heading">
       <div class="container">
         <div class="about-grid">
           <div class="about-photo-wrap">
-            <img
-              class="about-photo"
-              src="./profile.png"
-              alt="Founder of ICP Beacon"
-              width="280"
-              height="280"
-              loading="lazy"
-            />
+            <img class="about-photo" src="./profile.png" alt="Founder of ICP Beacon" width="280" height="280" loading="lazy" />
           </div>
           <div class="about-copy">
-            <div class="eyebrow" data-i18n="about.eyebrow">Who's behind this</div>
+            <div class="eyebrow" data-i18n="about.eyebrow">Who’s behind this</div>
             <h2 id="about-heading" data-i18n="about.h2">Built lean, on purpose.</h2>
-            <p>
-              I'm a software engineer with 12 years building products for companies that needed to do more with less. I've seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.
-            </p>
-            <p>
-              ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don't have a marketing department or time to learn new platforms.
-            </p>
+            <p data-i18n="about.p1">I’m a software engineer with 12 years building products for companies that needed to do more with less. I’ve seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.</p>
+            <p data-i18n="about.p2">ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don’t have a marketing department or time to learn new platforms.</p>
             <div class="about-tags">
-              <span class="about-tag">12 yrs in tech</span>
-              <span class="about-tag">Avid entrepreneur</span>
-              <span class="about-tag">Lean-first approach</span>
-              <span class="about-tag">Based in West Europe</span>
+              <span class="about-tag" data-i18n="about.tag1">12 yrs in tech</span>
+              <span class="about-tag" data-i18n="about.tag2">Avid entrepreneur</span>
+              <span class="about-tag" data-i18n="about.tag3">Lean-first approach</span>
+              <span class="about-tag" data-i18n="about.tag4">Based in West Europe</span>
             </div>
             <a class="about-cta" href="#pilot" data-i18n="about.cta">→ Apply for the pilot</a>
           </div>
@@ -1117,101 +1096,93 @@
       </div>
     </section>
 
-    <!-- ── WHY REACTIVATION ── -->
+    <!-- WHY REACTIVATION -->
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="why.h2">Why this is a better first move than chasing more cold traffic</h2>
-          <p>
-            Most gyms keep paying to acquire new attention while old enquiries and past members fade into the background. Reactivation can be simpler because the audience already knows the brand.
-          </p>
+          <h2 data-i18n="why.h2">Why this beats chasing more cold traffic</h2>
+          <p data-i18n="why.p">Most gyms keep paying to acquire new attention while old enquiries and past members fade into the background. Reactivation is faster because the audience already knows the brand.</p>
         </div>
         <div class="proof-grid">
           <article class="card fit-card">
-            <span class="label">Better use of existing demand</span>
-            <h3>Old contacts are often the most overlooked asset.</h3>
-            <p>If a gym has already generated interest once, there may still be recoverable value sitting in old enquiries, failed trials, and former memberships.</p>
+            <span class="label" data-i18n="why.card1.label">Better use of existing demand</span>
+            <h3 data-i18n="why.card1.h3">Old contacts are often the most overlooked asset.</h3>
+            <p data-i18n="why.card1.p">If a gym has already generated interest once, there may still be recoverable value sitting in old enquiries, failed trials, and former memberships.</p>
           </article>
           <article class="card fit-card">
-            <span class="label">Less operational friction</span>
-            <h3>No new software stack is required to test the core idea.</h3>
-            <p>The pilot is designed to stay lean so the gym can evaluate the opportunity before investing in heavier systems or internal process changes.</p>
+            <span class="label" data-i18n="why.card2.label">Less operational friction</span>
+            <h3 data-i18n="why.card2.h3">No new software stack is required to test the core idea.</h3>
+            <p data-i18n="why.card2.p">The pilot is designed to stay lean so the gym can evaluate the opportunity before investing in heavier systems or internal process changes.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ── WHO IT FITS ── -->
+    <!-- WHO IT FITS -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="fit.h2">Who this fits best</h2>
-          <p>
-            ICP Beacon is built for operators who want something clear, practical, and easy to trial.
-          </p>
+          <p data-i18n="fit.p">ICP Beacon is built for operators who want something clear, practical, and easy to trial.</p>
         </div>
         <div class="fit-grid">
           <article class="card">
             <h3 data-i18n="fit.good.h3">Good fit</h3>
             <ul>
-              <li>Independent gyms and boutique studios.</li>
-              <li>Operators with years of accumulated leads or former members.</li>
-              <li>Teams that want a lean pilot before any heavier commitment.</li>
-              <li>Owners who value simplicity over another complicated growth tool.</li>
+              <li data-i18n="fit.good.li1">Independent gyms and boutique studios.</li>
+              <li data-i18n="fit.good.li2">Operators with years of accumulated leads or former members.</li>
+              <li data-i18n="fit.good.li3">Teams that want a lean pilot before any heavier commitment.</li>
+              <li data-i18n="fit.good.li4">Owners who value simplicity over another complicated growth tool.</li>
             </ul>
           </article>
           <article class="card">
             <h3 data-i18n="fit.bad.h3">Probably not a fit</h3>
             <ul>
-              <li>New gyms with little or no historical lead database.</li>
-              <li>Operators looking for a full CRM replacement or complex growth stack.</li>
-              <li>Teams that want a custom enterprise rollout from day one.</li>
-              <li>Businesses without clear ownership of their existing contact lists.</li>
+              <li data-i18n="fit.bad.li1">New gyms with little or no historical lead database.</li>
+              <li data-i18n="fit.bad.li2">Operators looking for a full CRM replacement or complex growth stack.</li>
+              <li data-i18n="fit.bad.li3">Teams that want a custom enterprise rollout from day one.</li>
+              <li data-i18n="fit.bad.li4">Businesses without clear ownership of their existing contact lists.</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ── FAQ ── -->
+    <!-- FAQ -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="faq.h2">Common questions</h2>
-          <p>
-            The pilot is intentionally narrow. Keeping the scope tight makes it easier to decide fast.
-          </p>
+          <p data-i18n="faq.p">The pilot is intentionally narrow. Keeping the scope tight makes it easier to decide fast.</p>
         </div>
         <div class="faq-grid">
           <article class="card">
             <h3 data-i18n="faq.q1.h3">What do you need from me?</h3>
-            <p>Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.</p>
+            <p data-i18n="faq.q1.p">Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.</p>
           </article>
           <article class="card">
             <h3 data-i18n="faq.q2.h3">How does pricing work?</h3>
-            <p>Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.</p>
+            <p data-i18n="faq.q2.p">Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.</p>
           </article>
           <article class="card">
             <h3 data-i18n="faq.q3.h3">Does this work in my country?</h3>
-            <p>Yes. We're currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.</p>
+            <p data-i18n="faq.q3.p">Yes. We’re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ── FORM ── -->
+    <!-- FORM -->
     <section class="section" id="pilot">
       <div class="container form-shell">
         <div class="form-note">
           <div class="eyebrow" data-i18n="form.eyebrow">Free pilot application</div>
           <h2 data-i18n="form.h2">Apply for a free pilot.</h2>
-          <p>
-            Takes 2 minutes. We review every application and reply within 24h. No commitment required.
-          </p>
+          <p data-i18n="form.p">Takes 2 minutes. We review every application and reply within 24h. No commitment required.</p>
           <ul>
-            <li>Best for gyms with 200+ contacts in their existing database.</li>
-            <li>Performance-based — you only pay if we produce results.</li>
-            <li>No new software, no contracts, no setup fees.</li>
+            <li data-i18n="form.li1">Best for gyms with 200+ contacts in their existing database.</li>
+            <li data-i18n="form.li2">Performance-based — you only pay if we produce results.</li>
+            <li data-i18n="form.li3">No new software, no contracts, no setup fees.</li>
           </ul>
         </div>
         <div class="tally-wrap">
@@ -1238,112 +1209,51 @@
     </div>
   </footer>
 
-  <!-- ── PRIVACY MODAL ── -->
+  <!-- PRIVACY MODAL -->
   <div class="modal" id="modal-privacy" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-panel">
       <div class="modal-top">
-        <div>
-          <h2 id="privacy-title" data-i18n="privacy.title">Privacy policy</h2>
-        </div>
-        <button class="modal-close" type="button" data-close-modal aria-label="Close privacy policy">
+        <h2 id="privacy-title" data-i18n="modal.privacy.title">Privacy policy</h2>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="legal-copy">
-        <section>
-          <h3>Overview</h3>
-          <p>This website is intended to collect inbound interest from businesses that want to learn more about a pilot service related to member or lead reactivation.</p>
-        </section>
-        <section>
-          <h3>Information collected</h3>
-          <p>When a visitor submits the embedded application form, the information they choose to provide may include business contact details, business context, and qualification answers relevant to the requested pilot.</p>
-        </section>
-        <section>
-          <h3>Purpose of processing</h3>
-          <p>Submitted information is used only to review whether the applicant is a suitable fit, respond to the request, and manage follow-up conversations related to the pilot.</p>
-        </section>
-        <section>
-          <h3>Legal basis</h3>
-          <p>Information is processed on the basis of pre-contractual steps initiated by the visitor and, where applicable, legitimate interest in reviewing and responding to business enquiries.</p>
-        </section>
-        <section>
-          <h3>Data minimisation</h3>
-          <p>Only the information necessary to understand the enquiry and assess fit should be submitted. Sensitive personal information should not be entered through the form.</p>
-        </section>
-        <section>
-          <h3>Third-party services</h3>
-          <p>This site uses an embedded third-party form provider to display and manage the application form. Information submitted through the form may be processed through that provider according to its own infrastructure and terms.</p>
-        </section>
-        <section>
-          <h3>Retention</h3>
-          <p>Information is retained only for as long as reasonably necessary to manage the enquiry, evaluate the pilot opportunity, and comply with applicable legal obligations.</p>
-        </section>
-        <section>
-          <h3>Rights</h3>
-          <p>Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection where relevant.</p>
-        </section>
-        <section>
-          <h3>International processing</h3>
-          <p>Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor's own location, subject to applicable safeguards where required.</p>
-        </section>
-        <section>
-          <h3>Policy updates</h3>
-          <p>This privacy policy may be updated from time to time to reflect changes in the website, the qualification process, or legal requirements.</p>
-        </section>
+        <section><h3 data-i18n="modal.privacy.s1h">Overview</h3><p data-i18n="modal.privacy.s1p">This website is intended to collect inbound interest from businesses that want to learn more about a pilot service related to member or lead reactivation.</p></section>
+        <section><h3 data-i18n="modal.privacy.s2h">Information collected</h3><p data-i18n="modal.privacy.s2p">When a visitor submits the embedded application form, the information they choose to provide may include business contact details, business context, and qualification answers relevant to the requested pilot.</p></section>
+        <section><h3 data-i18n="modal.privacy.s3h">Purpose of processing</h3><p data-i18n="modal.privacy.s3p">Submitted information is used only to review whether the applicant is a suitable fit, respond to the request, and manage follow-up conversations related to the pilot.</p></section>
+        <section><h3 data-i18n="modal.privacy.s4h">Legal basis</h3><p data-i18n="modal.privacy.s4p">Information is processed on the basis of pre-contractual steps initiated by the visitor and, where applicable, legitimate interest in reviewing and responding to business enquiries.</p></section>
+        <section><h3 data-i18n="modal.privacy.s5h">Data minimisation</h3><p data-i18n="modal.privacy.s5p">Only the information necessary to understand the enquiry and assess fit should be submitted. Sensitive personal information should not be entered through the form.</p></section>
+        <section><h3 data-i18n="modal.privacy.s6h">Third-party services</h3><p data-i18n="modal.privacy.s6p">This site uses an embedded third-party form provider to display and manage the application form. Information submitted through the form may be processed through that provider according to its own infrastructure and terms.</p></section>
+        <section><h3 data-i18n="modal.privacy.s7h">Retention</h3><p data-i18n="modal.privacy.s7p">Information is retained only for as long as reasonably necessary to manage the enquiry, evaluate the pilot opportunity, and comply with applicable legal obligations.</p></section>
+        <section><h3 data-i18n="modal.privacy.s8h">Rights</h3><p data-i18n="modal.privacy.s8p">Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection where relevant.</p></section>
+        <section><h3 data-i18n="modal.privacy.s9h">International processing</h3><p data-i18n="modal.privacy.s9p">Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor’s own location, subject to applicable safeguards where required.</p></section>
+        <section><h3 data-i18n="modal.privacy.s10h">Policy updates</h3><p data-i18n="modal.privacy.s10p">This privacy policy may be updated from time to time to reflect changes in the website, the qualification process, or legal requirements.</p></section>
       </div>
     </div>
   </div>
 
-  <!-- ── TERMS MODAL ── -->
+  <!-- TERMS MODAL -->
   <div class="modal" id="modal-terms" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="terms-title">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-panel">
       <div class="modal-top">
-        <div>
-          <h2 id="terms-title" data-i18n="terms.title">Terms of use</h2>
-        </div>
-        <button class="modal-close" type="button" data-close-modal aria-label="Close terms of use">
+        <h2 id="terms-title" data-i18n="modal.terms.title">Terms of use</h2>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="legal-copy">
-        <section>
-          <h3>Use of the site</h3>
-          <p>This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.</p>
-        </section>
-        <section>
-          <h3>No promise of results</h3>
-          <p>Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results. Any future engagement would depend on the specific circumstances of the business and the agreed scope.</p>
-        </section>
-        <section>
-          <h3>Eligibility</h3>
-          <p>The form and related materials are intended for businesses and authorised representatives acting on behalf of a business, not for personal consumer use.</p>
-        </section>
-        <section>
-          <h3>Submitted information</h3>
-          <p>By submitting the application form, the visitor confirms that the information provided is accurate to the best of their knowledge and that they are authorised to submit it for business evaluation purposes.</p>
-        </section>
-        <section>
-          <h3>Intellectual property</h3>
-          <p>All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights unless otherwise stated.</p>
-        </section>
-        <section>
-          <h3>Acceptable use</h3>
-          <p>Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.</p>
-        </section>
-        <section>
-          <h3>Third-party tools</h3>
-          <p>The site may rely on third-party services for forms, analytics, hosting, or related functionality. Availability and performance may depend in part on those services.</p>
-        </section>
-        <section>
-          <h3>Changes and availability</h3>
-          <p>The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.</p>
-        </section>
-        <section>
-          <h3>Limitation</h3>
-          <p>To the fullest extent permitted by law, the site is provided on an "as is" and "as available" basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p>
-        </section>
+        <section><h3 data-i18n="modal.terms.s1h">Use of the site</h3><p data-i18n="modal.terms.s1p">This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.</p></section>
+        <section><h3 data-i18n="modal.terms.s2h">No promise of results</h3><p data-i18n="modal.terms.s2p">Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results. Any future engagement would depend on the specific circumstances of the business and the agreed scope.</p></section>
+        <section><h3 data-i18n="modal.terms.s3h">Eligibility</h3><p data-i18n="modal.terms.s3p">The form and related materials are intended for businesses and authorised representatives acting on behalf of a business, not for personal consumer use.</p></section>
+        <section><h3 data-i18n="modal.terms.s4h">Submitted information</h3><p data-i18n="modal.terms.s4p">By submitting the application form, the visitor confirms that the information provided is accurate to the best of their knowledge and that they are authorised to submit it for business evaluation purposes.</p></section>
+        <section><h3 data-i18n="modal.terms.s5h">Intellectual property</h3><p data-i18n="modal.terms.s5p">All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights unless otherwise stated.</p></section>
+        <section><h3 data-i18n="modal.terms.s6h">Acceptable use</h3><p data-i18n="modal.terms.s6p">Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.</p></section>
+        <section><h3 data-i18n="modal.terms.s7h">Third-party tools</h3><p data-i18n="modal.terms.s7p">The site may rely on third-party services for forms, analytics, hosting, or related functionality. Availability and performance may depend in part on those services.</p></section>
+        <section><h3 data-i18n="modal.terms.s8h">Changes and availability</h3><p data-i18n="modal.terms.s8p">The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.</p></section>
+        <section><h3 data-i18n="modal.terms.s9h">Limitation</h3><p data-i18n="modal.terms.s9p">To the fullest extent permitted by law, the site is provided on an “as is” and “as available” basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p></section>
       </div>
     </div>
   </div>
@@ -1354,7 +1264,7 @@
     /* ── THEME ── */
     const root = document.documentElement;
     const themeBtn = document.querySelector('[data-theme-toggle]');
-    let theme = localStorage.getItem('theme') ||
+    let theme = localStorage.getItem('icpb-theme') ||
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     root.setAttribute('data-theme', theme);
 
@@ -1368,7 +1278,7 @@
     themeBtn.addEventListener('click', () => {
       theme = theme === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', theme);
-      localStorage.setItem('theme', theme);
+      localStorage.setItem('icpb-theme', theme);
       renderTheme();
     });
 
@@ -1415,24 +1325,36 @@
         'nav.applyNow': 'Apply now',
         'hero.eyebrow': 'Gym member reactivation',
         'hero.h1': 'You already paid for those leads. Time to get something back.',
-        'hero.p': 'We run a short SMS reactivation pilot on your cold contact list \u2014 ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.',
+        'hero.p': 'We run a short SMS reactivation pilot on your cold contact list — ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.',
         'hero.cta1': 'Apply for the pilot',
         'hero.cta2': 'See how it works',
         'hero.meta1': 'No upfront cost',
         'hero.meta2': 'For gyms and studios',
-        'hero.meta3': 'Results in 2\u20133 weeks',
+        'hero.meta3': 'Results in 2–3 weeks',
         'card.inputLabel': 'What goes in',
         'card.inputValue': 'Your cold list',
         'card.inputSub': 'An export of old leads, ex-members or failed trials.',
+        'card.exec.label': 'Execution',
+        'card.exec.title': 'SMS reactivation pilot',
+        'card.exec.sub': 'We handle the outreach. You just review the replies.',
+        'card.focus.label': 'Focus',
+        'card.focus.title': 'Booked conversations',
+        'card.focus.sub': 'We push toward visit intent or membership calls.',
+        'card.result.label': 'Result',
+        'card.result.title': 'Performance-based',
+        'card.result.sub': 'You only pay when we produce a result.',
+        'card.input2.label': 'Input',
+        'card.input2.title': 'Your cold list',
+        'card.input2.sub': 'An export of old leads, ex-members or failed trials.',
         'pain.h2': 'Sound familiar?',
         'pain.card1.h3': 'That list from 8 months ago',
         'pain.card1.p': 'You stopped calling those 300 leads. The front desk moved on. The database just... sits there.',
         'pain.card2.h3': 'Email blasts that go nowhere',
-        'pain.card2.p': "You\'ve tried the newsletter. 4 opens, zero replies, one unsubscribe.",
+        'pain.card2.p': 'You’ve tried the newsletter. 4 opens, zero replies, one unsubscribe.',
         'pain.card3.h3': 'Acquisition costs keep climbing',
         'pain.card3.p': 'Every new lead costs more. Meanwhile, people who already know your gym are being ignored.',
-        'pain.callout': "That list isn\'t dead. It just hasn\'t had the right message yet.",
-        'pain.stat1': 'average SMS reply rate on cold reactivation lists (vs. 3\u20138% for email)',
+        'pain.callout': 'That list isn’t dead. It just hasn’t had the right message yet.',
+        'pain.stat1': 'average SMS reply rate on cold reactivation lists (vs. 3–8% for email)',
         'pain.stat2': 'typical time from list upload to first booked conversations',
         'how.h2': 'How the pilot works',
         'how.p': 'Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.',
@@ -1441,18 +1363,18 @@
         'how.step2.h3': 'We run the pilot',
         'how.step2.p': 'We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.',
         'how.step3.h3': 'You pay for results',
-        'how.step3.p': "If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn\'t, you owe nothing.",
-        'about.eyebrow': "Who\'s behind this",
+        'how.step3.p': 'If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn’t, you owe nothing.',
+        'about.eyebrow': 'Who’s behind this',
         'about.h2': 'Built lean, on purpose.',
-        'about.p1': "I\'m a software engineer with 12 years building products for companies that needed to do more with less. I\'ve seen firsthand how most gyms have a hidden asset sitting in their database \u2014 and no system to activate it.",
-        'about.p2': "ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don\'t have a marketing department or time to learn new platforms.",
+        'about.p1': 'I’m a software engineer with 12 years building products for companies that needed to do more with less. I’ve seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.',
+        'about.p2': 'ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don’t have a marketing department or time to learn new platforms.',
         'about.tag1': '12 yrs in tech',
         'about.tag2': 'Avid entrepreneur',
         'about.tag3': 'Lean-first approach',
         'about.tag4': 'Based in West Europe',
-        'about.cta': '\u2192 Apply for the pilot',
-        'why.h2': 'Why this is a better first move than chasing more cold traffic',
-        'why.p': 'Most gyms keep paying to acquire new attention while old enquiries and past members fade into the background. Reactivation can be simpler because the audience already knows the brand.',
+        'about.cta': '→ Apply for the pilot',
+        'why.h2': 'Why this beats chasing more cold traffic',
+        'why.p': 'Most gyms keep paying to acquire new attention while old enquiries and past members fade into the background. Reactivation is faster because the audience already knows the brand.',
         'why.card1.label': 'Better use of existing demand',
         'why.card1.h3': 'Old contacts are often the most overlooked asset.',
         'why.card1.p': 'If a gym has already generated interest once, there may still be recoverable value sitting in old enquiries, failed trials, and former memberships.',
@@ -1476,102 +1398,190 @@
         'faq.q1.h3': 'What do you need from me?',
         'faq.q1.p': 'Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.',
         'faq.q2.h3': 'How does pricing work?',
-        'faq.q2.p': 'Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.',
+        'faq.q2.p': 'Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.',
         'faq.q3.h3': 'Does this work in my country?',
-        'faq.q3.p': "Yes. We\'re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.",
+        'faq.q3.p': 'Yes. We’re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.',
         'form.eyebrow': 'Free pilot application',
         'form.h2': 'Apply for a free pilot.',
         'form.p': 'Takes 2 minutes. We review every application and reply within 24h. No commitment required.',
         'form.li1': 'Best for gyms with 200+ contacts in their existing database.',
-        'form.li2': 'Performance-based \u2014 you only pay if we produce results.',
+        'form.li2': 'Performance-based — you only pay if we produce results.',
         'form.li3': 'No new software, no contracts, no setup fees.',
         'footer.tagline': 'Lean reactivation for gyms and studios. No result, no fee.',
         'footer.privacy': 'Privacy policy',
         'footer.terms': 'Terms of use',
-        'privacy.title': 'Privacy policy',
-        'terms.title': 'Terms of use',
+        'modal.privacy.title': 'Privacy policy',
+        'modal.privacy.s1h': 'Overview',
+        'modal.privacy.s1p': 'This website is intended to collect inbound interest from businesses that want to learn more about a pilot service related to member or lead reactivation.',
+        'modal.privacy.s2h': 'Information collected',
+        'modal.privacy.s2p': 'When a visitor submits the embedded application form, the information they choose to provide may include business contact details, business context, and qualification answers relevant to the requested pilot.',
+        'modal.privacy.s3h': 'Purpose of processing',
+        'modal.privacy.s3p': 'Submitted information is used only to review whether the applicant is a suitable fit, respond to the request, and manage follow-up conversations related to the pilot.',
+        'modal.privacy.s4h': 'Legal basis',
+        'modal.privacy.s4p': 'Information is processed on the basis of pre-contractual steps initiated by the visitor and, where applicable, legitimate interest in reviewing and responding to business enquiries.',
+        'modal.privacy.s5h': 'Data minimisation',
+        'modal.privacy.s5p': 'Only the information necessary to understand the enquiry and assess fit should be submitted. Sensitive personal information should not be entered through the form.',
+        'modal.privacy.s6h': 'Third-party services',
+        'modal.privacy.s6p': 'This site uses an embedded third-party form provider to display and manage the application form. Information submitted through the form may be processed through that provider according to its own infrastructure and terms.',
+        'modal.privacy.s7h': 'Retention',
+        'modal.privacy.s7p': 'Information is retained only for as long as reasonably necessary to manage the enquiry, evaluate the pilot opportunity, and comply with applicable legal obligations.',
+        'modal.privacy.s8h': 'Rights',
+        'modal.privacy.s8p': 'Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection where relevant.',
+        'modal.privacy.s9h': 'International processing',
+        'modal.privacy.s9p': 'Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor’s own location, subject to applicable safeguards where required.',
+        'modal.privacy.s10h': 'Policy updates',
+        'modal.privacy.s10p': 'This privacy policy may be updated from time to time to reflect changes in the website, the qualification process, or legal requirements.',
+        'modal.terms.title': 'Terms of use',
+        'modal.terms.s1h': 'Use of the site',
+        'modal.terms.s1p': 'This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.',
+        'modal.terms.s2h': 'No promise of results',
+        'modal.terms.s2p': 'Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results.',
+        'modal.terms.s3h': 'Eligibility',
+        'modal.terms.s3p': 'The form and related materials are intended for businesses and authorised representatives acting on behalf of a business, not for personal consumer use.',
+        'modal.terms.s4h': 'Submitted information',
+        'modal.terms.s4p': 'By submitting the application form, the visitor confirms that the information provided is accurate to the best of their knowledge and that they are authorised to submit it for business evaluation purposes.',
+        'modal.terms.s5h': 'Intellectual property',
+        'modal.terms.s5p': 'All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights unless otherwise stated.',
+        'modal.terms.s6h': 'Acceptable use',
+        'modal.terms.s6p': 'Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.',
+        'modal.terms.s7h': 'Third-party tools',
+        'modal.terms.s7p': 'The site may rely on third-party services for forms, analytics, hosting, or related functionality. Availability and performance may depend in part on those services.',
+        'modal.terms.s8h': 'Changes and availability',
+        'modal.terms.s8p': 'The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.',
+        'modal.terms.s9h': 'Limitation',
+        'modal.terms.s9p': 'To the fullest extent permitted by law, the site is provided on an “as is” and “as available” basis, without warranties of any kind.',
       },
       es: {
-        'nav.howItWorks': 'C\u00f3mo funciona',
+        'nav.howItWorks': 'Cómo funciona',
         'nav.pilot': 'Piloto',
         'nav.applyNow': 'Solicitar ahora',
-        'hero.eyebrow': 'Reactivaci\u00f3n de socios de gimnasio',
+        'hero.eyebrow': 'Reactivación de socios de gimnasio',
         'hero.h1': 'Ya pagaste por esos contactos. Es hora de sacarles partido.',
-        'hero.p': 'Ejecutamos un piloto corto de reactivaci\u00f3n por SMS sobre tu lista fr\u00eda \u2014 ex-socios, consultas antiguas, pruebas caducadas. Sin software nuevo. Sin coste inicial. Solo pagas si funciona.',
+        'hero.p': 'Ejecutamos un piloto corto de reactivación por SMS sobre tu lista fría — ex-socios, consultas antiguas, pruebas caducadas. Sin software nuevo. Sin coste inicial. Solo pagas si funciona.',
         'hero.cta1': 'Solicitar el piloto',
-        'hero.cta2': 'Ver c\u00f3mo funciona',
+        'hero.cta2': 'Ver cómo funciona',
         'hero.meta1': 'Sin coste inicial',
         'hero.meta2': 'Para gimnasios y estudios',
-        'hero.meta3': 'Resultados en 2\u20133 semanas',
-        'card.inputLabel': 'Qu\u00e9 necesitamos',
-        'card.inputValue': 'Tu lista fr\u00eda',
+        'hero.meta3': 'Resultados en 2–3 semanas',
+        'card.inputLabel': 'Qué necesitamos',
+        'card.inputValue': 'Tu lista fría',
         'card.inputSub': 'Un exportado de contactos antiguos, ex-socios o pruebas fallidas.',
-        'pain.h2': '\u00bfTe suena familiar?',
+        'card.exec.label': 'Ejecución',
+        'card.exec.title': 'Piloto de reactivación SMS',
+        'card.exec.sub': 'Gestionamos el contacto. Tú solo revisas las respuestas.',
+        'card.focus.label': 'Objetivo',
+        'card.focus.title': 'Conversaciones reservadas',
+        'card.focus.sub': 'Buscamos intención de visita o llamadas sobre membresías.',
+        'card.result.label': 'Resultado',
+        'card.result.title': 'Basado en rendimiento',
+        'card.result.sub': 'Solo pagas cuando producimos un resultado.',
+        'card.input2.label': 'Entrada',
+        'card.input2.title': 'Tu lista fría',
+        'card.input2.sub': 'Un exportado de contactos antiguos, ex-socios o pruebas fallidas.',
+        'pain.h2': '¿Te suena familiar?',
         'pain.card1.h3': 'Esa lista de hace 8 meses',
-        'pain.card1.p': 'Dejaste de llamar a esos 300 contactos. La recepci\u00f3n sigui\u00f3 adelante. La base de datos simplemente... est\u00e1 ah\u00ed.',
-        'pain.card2.h3': 'Newsletters que no llegan a ning\u00fan lado',
-        'pain.card2.p': 'Lo has intentado con el bolet\u00edn. 4 aperturas, cero respuestas, una baja.',
-        'pain.card3.h3': 'El coste de captaci\u00f3n no deja de subir',
-        'pain.card3.p': 'Cada nuevo contacto cuesta m\u00e1s. Mientras tanto, las personas que ya conocen tu gimnasio est\u00e1n siendo ignoradas.',
-        'pain.callout': 'Esa lista no est\u00e1 muerta. Solo necesita el mensaje correcto.',
-        'pain.stat1': 'tasa media de respuesta por SMS en listas fr\u00edas de reactivaci\u00f3n (vs. 3\u20138% por email)',
-        'pain.stat2': 'tiempo t\u00edpico desde la subida de la lista hasta las primeras conversaciones reservadas',
-        'how.h2': 'C\u00f3mo funciona el piloto',
-        'how.p': 'Tres pasos. Sin plataformas nuevas. Sin procesos de incorporaci\u00f3n largos. Solo una prueba enfocada de lo que puede producir tu lista fr\u00eda.',
-        'how.step1.h3': 'Env\u00ednos tu lista',
-        'how.step1.p': 'Un exportado CSV sencillo de contactos antiguos o ex-socios. No se necesita ning\u00fan formato especial. Lo revisamos y confirmamos idoneidad en 24h.',
+        'pain.card1.p': 'Dejaste de llamar a esos 300 contactos. La recepción siguió adelante. La base de datos simplemente... está ahí.',
+        'pain.card2.h3': 'Newsletters que no llegan a ningún lado',
+        'pain.card2.p': 'Lo has intentado con el boletín. 4 aperturas, cero respuestas, una baja.',
+        'pain.card3.h3': 'El coste de captación no deja de subir',
+        'pain.card3.p': 'Cada nuevo contacto cuesta más. Mientras tanto, las personas que ya conocen tu gimnasio están siendo ignoradas.',
+        'pain.callout': 'Esa lista no está muerta. Solo necesita el mensaje correcto.',
+        'pain.stat1': 'tasa media de respuesta por SMS en listas frías de reactivación (vs. 3–8% por email)',
+        'pain.stat2': 'tiempo típico desde la subida de la lista hasta las primeras conversaciones reservadas',
+        'how.h2': 'Cómo funciona el piloto',
+        'how.p': 'Tres pasos. Sin plataformas nuevas. Sin procesos de incorporación largos. Solo una prueba enfocada de lo que puede producir tu lista fría.',
+        'how.step1.h3': 'Envínos tu lista',
+        'how.step1.p': 'Un exportado CSV sencillo de contactos antiguos o ex-socios. No se necesita ningún formato especial. Lo revisamos y confirmamos idoneidad en 24h.',
         'how.step2.h3': 'Ejecutamos el piloto',
-        'how.step2.p': 'Configuramos y enviamos una secuencia de SMS dirigida. Gestionamos las respuestas, cualificamos el inter\u00e9s y buscamos una visita o llamada reservada.',
+        'how.step2.p': 'Configuramos y enviamos una secuencia de SMS dirigida. Gestionamos las respuestas, cualificamos el interés y buscamos una visita o llamada reservada.',
         'how.step3.h3': 'Pagas por resultados',
-        'how.step3.p': 'Si el piloto produce conversaciones reservadas o consultas de membres\u00eda, facturamos. Si no, no debes nada.',
-        'about.eyebrow': 'Qui\u00e9n hay detr\u00e1s',
-        'about.h2': 'Construido de forma lean, a prop\u00f3sito.',
-        'about.p1': 'Soy ingeniero de software con 12 a\u00f1os construyendo productos para empresas que necesitaban hacer m\u00e1s con menos. He visto de primera mano c\u00f3mo la mayor\u00eda de los gimnasios tienen un activo oculto en su base de datos \u2014 y ning\u00fan sistema para activarlo.',
-        'about.p2': 'ICP Beacon es la versi\u00f3n lean de lo que usan los equipos de ventas enterprise, adaptada para propietarios de gimnasios independientes que no tienen departamento de marketing ni tiempo para aprender nuevas plataformas.',
-        'about.tag1': '12 a\u00f1os en tecnolog\u00eda',
+        'how.step3.p': 'Si el piloto produce conversaciones reservadas o consultas de membresía, facturamos. Si no, no debes nada.',
+        'about.eyebrow': 'Quién hay detrás',
+        'about.h2': 'Construido de forma lean, a propósito.',
+        'about.p1': 'Soy ingeniero de software con 12 años construyendo productos para empresas que necesitaban hacer más con menos. He visto de primera mano cómo la mayoría de los gimnasios tienen un activo oculto en su base de datos — y ningún sistema para activarlo.',
+        'about.p2': 'ICP Beacon es la versión lean de lo que usan los equipos de ventas enterprise, adaptada para propietarios de gimnasios independientes que no tienen departamento de marketing ni tiempo para aprender nuevas plataformas.',
+        'about.tag1': '12 años en tecnología',
         'about.tag2': 'Emprendedor activo',
         'about.tag3': 'Enfoque lean-first',
         'about.tag4': 'Basado en Europa Occidental',
-        'about.cta': '\u2192 Solicitar el piloto',
-        'why.h2': 'Por qu\u00e9 es mejor que salir a buscar m\u00e1s tr\u00e1fico fr\u00edo',
-        'why.p': 'La mayor\u00eda de los gimnasios siguen pagando para captar nueva atenci\u00f3n mientras las consultas antiguas y los ex-socios desaparecen en segundo plano. La reactivaci\u00f3n puede ser m\u00e1s sencilla porque el p\u00fablico ya conoce la marca.',
+        'about.cta': '→ Solicitar el piloto',
+        'why.h2': 'Por qué es mejor que buscar más tráfico frío',
+        'why.p': 'La mayoría de los gimnasios siguen pagando para captar nueva atención mientras las consultas antiguas y los ex-socios desaparecen en segundo plano. La reactivación es más rápida porque el público ya conoce la marca.',
         'why.card1.label': 'Mejor uso de la demanda existente',
-        'why.card1.h3': 'Los contactos antiguos suelen ser el activo m\u00e1s ignorado.',
-        'why.card1.p': 'Si un gimnasio ya ha generado inter\u00e9s una vez, puede haber valor recuperable en consultas antiguas, pruebas fallidas y ex-membres\u00edas.',
-        'why.card2.label': 'Menos fricci\u00f3n operativa',
+        'why.card1.h3': 'Los contactos antiguos suelen ser el activo más ignorado.',
+        'why.card1.p': 'Si un gimnasio ya ha generado interés una vez, puede haber valor recuperable en consultas antiguas, pruebas fallidas y ex-membresías.',
+        'why.card2.label': 'Menos fricción operativa',
         'why.card2.h3': 'No se necesita ninguna plataforma nueva para probar la idea central.',
-        'why.card2.p': 'El piloto est\u00e1 dise\u00f1ado para mantenerse ligero, para que el gimnasio pueda evaluar la oportunidad antes de invertir en sistemas m\u00e1s pesados.',
-        'fit.h2': 'A qui\u00e9n le encaja mejor',
-        'fit.p': 'ICP Beacon est\u00e1 pensado para operadores que quieren algo claro, pr\u00e1ctico y f\u00e1cil de probar.',
+        'why.card2.p': 'El piloto está diseñado para mantenerse ligero, para que el gimnasio pueda evaluar la oportunidad antes de invertir en sistemas más pesados.',
+        'fit.h2': 'A quién le encaja mejor',
+        'fit.p': 'ICP Beacon está pensado para operadores que quieren algo claro, práctico y fácil de probar.',
         'fit.good.h3': 'Buen encaje',
         'fit.good.li1': 'Gimnasios independientes y estudios boutique.',
-        'fit.good.li2': 'Operadores con a\u00f1os de contactos acumulados o ex-socios.',
-        'fit.good.li3': 'Equipos que quieren un piloto ligero antes de comprometerse m\u00e1s.',
+        'fit.good.li2': 'Operadores con años de contactos acumulados o ex-socios.',
+        'fit.good.li3': 'Equipos que quieren un piloto ligero antes de comprometerse más.',
         'fit.good.li4': 'Propietarios que valoran la simplicidad sobre otra herramienta de crecimiento complicada.',
         'fit.bad.h3': 'Probablemente no encaja',
-        'fit.bad.li1': 'Gimnasios nuevos con poca o ninguna base de datos hist\u00f3rica.',
-        'fit.bad.li2': 'Operadores que buscan reemplazar su CRM o una soluci\u00f3n compleja de crecimiento.',
-        'fit.bad.li3': 'Equipos que quieren un despliegue enterprise personalizado desde el primer d\u00eda.',
+        'fit.bad.li1': 'Gimnasios nuevos con poca o ninguna base de datos histórica.',
+        'fit.bad.li2': 'Operadores que buscan reemplazar su CRM o una solución compleja de crecimiento.',
+        'fit.bad.li3': 'Equipos que quieren un despliegue enterprise personalizado desde el primer día.',
         'fit.bad.li4': 'Empresas sin titularidad clara sobre sus listas de contactos existentes.',
         'faq.h2': 'Preguntas frecuentes',
-        'faq.p': 'El piloto es intencionalmente acotado. Mantener el alcance ajustado facilita tomar una decisi\u00f3n r\u00e1pida.',
-        'faq.q1.h3': '\u00bfQu\u00e9 necesitas de m\u00ed?',
-        'faq.q1.p': 'Solo un exportado CSV de tus contactos antiguos o ex-socios. Nosotros nos encargamos de la configuraci\u00f3n, el contacto y la cualificaci\u00f3n.',
-        'faq.q2.h3': '\u00bfC\u00f3mo funciona el precio?',
-        'faq.q2.p': 'Solo por rendimiento. No pagas nada por adelantado. Acordamos una tarifa por conversaci\u00f3n reservada o un reparto de ingresos por membres\u00edas vendidas. Sin resultado = sin factura.',
-        'faq.q3.h3': '\u00bfFunciona en mi pa\u00eds?',
-        'faq.q3.p': 'S\u00ed. Actualmente ejecutamos pilotos con gimnasios en Espa\u00f1a y la Costa Este de EE.UU. Mientras tengas una lista y vendas membres\u00edas, podemos probarlo.',
+        'faq.p': 'El piloto es intencionalmente acotado. Mantener el alcance ajustado facilita tomar una decisión rápida.',
+        'faq.q1.h3': '¿Qué necesitas de mí?',
+        'faq.q1.p': 'Solo un exportado CSV de tus contactos antiguos o ex-socios. Nosotros nos encargamos de la configuración, el contacto y la cualificación.',
+        'faq.q2.h3': '¿Cómo funciona el precio?',
+        'faq.q2.p': 'Solo por rendimiento. No pagas nada por adelantado. Acordamos una tarifa por conversación reservada o un reparto de ingresos por membresías vendidas. Sin resultado = sin factura.',
+        'faq.q3.h3': '¿Funciona en mi país?',
+        'faq.q3.p': 'Sí. Actualmente ejecutamos pilotos con gimnasios en España y la Costa Este de EE. UU. Mientras tengas una lista y vendas membresías, podemos probarlo.',
         'form.eyebrow': 'Solicitud de piloto gratuito',
         'form.h2': 'Solicita un piloto gratuito.',
         'form.p': 'Tarda 2 minutos. Revisamos cada solicitud y respondemos en 24h. Sin compromiso.',
         'form.li1': 'Ideal para gimnasios con 200+ contactos en su base de datos existente.',
-        'form.li2': 'Basado en rendimiento \u2014 solo pagas si producimos resultados.',
-        'form.li3': 'Sin software nuevo, sin contratos, sin tarifas de configuraci\u00f3n.',
-        'footer.tagline': 'Reactivaci\u00f3n lean para gimnasios y estudios. Sin resultado, sin coste.',
-        'footer.privacy': 'Pol\u00edtica de privacidad',
-        'footer.terms': 'T\u00e9rminos de uso',
-        'privacy.title': 'Pol\u00edtica de privacidad',
-        'terms.title': 'T\u00e9rminos de uso',
+        'form.li2': 'Basado en rendimiento — solo pagas si producimos resultados.',
+        'form.li3': 'Sin software nuevo, sin contratos, sin tarifas de configuración.',
+        'footer.tagline': 'Reactivación lean para gimnasios y estudios. Sin resultado, sin coste.',
+        'footer.privacy': 'Política de privacidad',
+        'footer.terms': 'Términos de uso',
+        'modal.privacy.title': 'Política de privacidad',
+        'modal.privacy.s1h': 'Resumen',
+        'modal.privacy.s1p': 'Este sitio web está destinado a recopilar el interés de empresas que desean obtener más información sobre un servicio piloto relacionado con la reactivación de socios o contactos.',
+        'modal.privacy.s2h': 'Información recopilada',
+        'modal.privacy.s2p': 'Cuando un visitante envía el formulario de solicitud integrado, la información que elija proporcionar puede incluir datos de contacto empresariales, contexto de negocio y respuestas de cualificación relevantes para el piloto solicitado.',
+        'modal.privacy.s3h': 'Finalidad del tratamiento',
+        'modal.privacy.s3p': 'La información enviada se utiliza únicamente para revisar si el solicitante es un buen candidato, responder a la solicitud y gestionar las conversaciones de seguimiento relacionadas con el piloto.',
+        'modal.privacy.s4h': 'Base jurídica',
+        'modal.privacy.s4p': 'La información se trata sobre la base de pasos precontractuales iniciados por el visitante y, cuando corresponda, el interés legítimo en revisar y responder a consultas empresariales.',
+        'modal.privacy.s5h': 'Minimización de datos',
+        'modal.privacy.s5p': 'Solo debe enviarse la información necesaria para entender la consulta y evaluar el encaje. No debe introducirse información personal sensible a través del formulario.',
+        'modal.privacy.s6h': 'Servicios de terceros',
+        'modal.privacy.s6p': 'Este sitio utiliza un proveedor de formularios de terceros integrado. La información enviada puede ser procesada por ese proveedor según su propia infraestructura y condiciones.',
+        'modal.privacy.s7h': 'Retención',
+        'modal.privacy.s7p': 'La información se conserva solo durante el tiempo razonablemente necesario para gestionar la consulta, evaluar la oportunidad del piloto y cumplir con las obligaciones legales aplicables.',
+        'modal.privacy.s8h': 'Derechos',
+        'modal.privacy.s8p': 'Los visitantes pueden tener derechos bajo las leyes de privacidad aplicables, incluido el derecho a solicitar acceso, rectificación, supresión, limitación u oposición cuando sea pertinente.',
+        'modal.privacy.s9h': 'Procesamiento internacional',
+        'modal.privacy.s9p': 'Dependiendo de las herramientas utilizadas, la información puede procesarse en jurisdicciones distintas a la del visitante, sujeto a las salvaguardas aplicables.',
+        'modal.privacy.s10h': 'Actualizaciones de la política',
+        'modal.privacy.s10p': 'Esta política de privacidad puede actualizarse periódicamente para reflejar cambios en el sitio web, el proceso de cualificación o los requisitos legales.',
+        'modal.terms.title': 'Términos de uso',
+        'modal.terms.s1h': 'Uso del sitio',
+        'modal.terms.s1p': 'Este sitio web se proporciona con fines informativos generales y para permitir que las empresas expresen su interés en un servicio piloto. El uso del sitio no crea una relación de cliente ni garantiza la aceptación en ningún piloto.',
+        'modal.terms.s2h': 'Sin promesa de resultados',
+        'modal.terms.s2p': 'Nada en este sitio web debe interpretarse como una garantía de rendimiento, resultados empresariales, volumen de contactos, membresías o resultados comerciales.',
+        'modal.terms.s3h': 'Elegibilidad',
+        'modal.terms.s3p': 'El formulario y los materiales relacionados están destinados a empresas y representantes autorizados que actúen en nombre de una empresa, no para uso personal de consumidores.',
+        'modal.terms.s4h': 'Información enviada',
+        'modal.terms.s4p': 'Al enviar el formulario de solicitud, el visitante confirma que la información proporcionada es correcta según su leal saber y entender y que está autorizado a enviarla con fines de evaluación empresarial.',
+        'modal.terms.s5h': 'Propiedad intelectual',
+        'modal.terms.s5p': 'Todo el contenido, la marca, el diseño, el texto y los elementos visuales de este sitio están protegidos por los derechos de propiedad intelectual aplicables.',
+        'modal.terms.s6h': 'Uso aceptable',
+        'modal.terms.s6p': 'Los visitantes no deben hacer un uso indebido del sitio, intentar accesos no autorizados, interferir con la funcionalidad del sitio ni enviar contenido ilícito, engañoso o dañino.',
+        'modal.terms.s7h': 'Herramientas de terceros',
+        'modal.terms.s7p': 'El sitio puede depender de servicios de terceros para formularios, análisis, alojamiento u otras funcionalidades. La disponibilidad puede depender en parte de esos servicios.',
+        'modal.terms.s8h': 'Cambios y disponibilidad',
+        'modal.terms.s8p': 'El sitio, su contenido y los detalles del piloto pueden modificarse, pausarse o retirarse en cualquier momento sin previo aviso.',
+        'modal.terms.s9h': 'Limitación de responsabilidad',
+        'modal.terms.s9p': 'En la medida máxima permitida por la ley, el sitio se proporciona “tal cual” y “según disponibilidad”, sin garantías de ningún tipo.',
       }
     };
 
@@ -1581,26 +1591,21 @@
     const applyLang = (lang) => {
       root.setAttribute('lang', lang);
       root.setAttribute('data-lang', lang);
-
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         const val = i18n[lang] && i18n[lang][key];
         if (val !== undefined) el.textContent = val;
       });
-
       langBtns.forEach(btn => {
-        const isActive = btn.getAttribute('data-lang') === lang;
-        btn.classList.toggle('active', isActive);
-        btn.setAttribute('aria-pressed', String(isActive));
+        const active = btn.getAttribute('data-lang') === lang;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', String(active));
       });
     };
 
-    langBtns.forEach(btn => {
-      btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang')));
-    });
-
-    // init — no-op reapply of English to set aria-pressed correctly
+    langBtns.forEach(btn => btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang'))));
     applyLang('en');
   })();
   </script>
 </body>
+</html>
