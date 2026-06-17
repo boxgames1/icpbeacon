@@ -9,29 +9,23 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="ICP Beacon" />
   <link rel="canonical" href="https://icpbeacon.com" />
-  <!-- Open Graph -->
   <meta property="og:title" content="ICP Beacon — Reactivate Old Gym Leads. No Upfront Cost." />
   <meta property="og:description" content="Turn cold contacts into booked conversations. SMS reactivation pilot for gyms and fitness studios. Pay only when it works." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://icpbeacon.com" />
   <meta property="og:image" content="https://icpbeacon.com/og-image.png" />
   <meta property="og:site_name" content="ICP Beacon" />
-  <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ICP Beacon — Reactivate Old Gym Leads. No Upfront Cost." />
   <meta name="twitter:description" content="Turn cold contacts into booked conversations. SMS reactivation pilot for gyms and fitness studios. Pay only when it works." />
   <meta name="twitter:image" content="https://icpbeacon.com/og-image.png" />
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2KK9XGGW5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-Q2KK9XGGW5');
   </script>
-
-  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,11 +47,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    /* Art direction: conversion-focused gym lead reactivation landing → precise, calm, premium
-       Palette: neutral light surfaces + restrained teal accent
-       Typography: Inter display + body for a Stripe-like, product-led feel
-       Density: balanced, spacious in hero, compact in sections */
-
     :root, [data-theme="light"] {
       --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
       --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
@@ -65,20 +54,9 @@
       --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
       --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
       --text-2xl: clamp(2.1rem, 1.4rem + 2vw, 4rem);
-
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --space-16: 4rem;
-      --space-20: 5rem;
-      --space-24: 6rem;
-
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
       --color-bg: #f7f6f2;
       --color-surface: #fbfaf7;
       --color-surface-2: #ffffff;
@@ -92,72 +70,44 @@
       --color-primary: #0e6b72;
       --color-primary-hover: #0a5459;
       --color-primary-highlight: #d9e8e5;
-      --radius-sm: 0.5rem;
-      --radius-md: 0.85rem;
-      --radius-lg: 1.1rem;
-      --radius-xl: 1.5rem;
-      --radius-full: 9999px;
+      --radius-sm: 0.5rem; --radius-md: 0.85rem; --radius-lg: 1.1rem;
+      --radius-xl: 1.5rem; --radius-full: 9999px;
       --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
       --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
       --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.12);
       --content-default: 1120px;
-      --content-wide: 1240px;
       --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
       --font-body: 'Inter', system-ui, sans-serif;
-      --font-display: 'Inter', system-ui, sans-serif;
     }
-
     [data-theme="dark"] {
-      --color-bg: #131413;
-      --color-surface: #181917;
-      --color-surface-2: #1e1f1d;
-      --color-surface-offset: #232420;
-      --color-border: rgba(255,255,255,0.12);
-      --color-divider: #2d2f2a;
-      --color-text: #ebebe7;
-      --color-text-muted: #b3b1aa;
-      --color-text-faint: #7d7b75;
-      --color-text-inverse: #0f110f;
-      --color-primary: #61a9b3;
-      --color-primary-hover: #7abcc4;
+      --color-bg: #131413; --color-surface: #181917; --color-surface-2: #1e1f1d;
+      --color-surface-offset: #232420; --color-border: rgba(255,255,255,0.12);
+      --color-divider: #2d2f2a; --color-text: #ebebe7; --color-text-muted: #b3b1aa;
+      --color-text-faint: #7d7b75; --color-text-inverse: #0f110f;
+      --color-primary: #61a9b3; --color-primary-hover: #7abcc4;
       --color-primary-highlight: rgba(97,169,179,0.14);
       --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
       --shadow-md: 0 10px 30px rgba(0,0,0,0.28);
       --shadow-lg: 0 24px 60px rgba(0,0,0,0.38);
     }
-
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
-        --color-bg: #131413;
-        --color-surface: #181917;
-        --color-surface-2: #1e1f1d;
-        --color-surface-offset: #232420;
-        --color-border: rgba(255,255,255,0.12);
-        --color-divider: #2d2f2a;
-        --color-text: #ebebe7;
-        --color-text-muted: #b3b1aa;
-        --color-text-faint: #7d7b75;
-        --color-text-inverse: #0f110f;
-        --color-primary: #61a9b3;
-        --color-primary-hover: #7abcc4;
+        --color-bg: #131413; --color-surface: #181917; --color-surface-2: #1e1f1d;
+        --color-surface-offset: #232420; --color-border: rgba(255,255,255,0.12);
+        --color-divider: #2d2f2a; --color-text: #ebebe7; --color-text-muted: #b3b1aa;
+        --color-text-faint: #7d7b75; --color-text-inverse: #0f110f;
+        --color-primary: #61a9b3; --color-primary-hover: #7abcc4;
         --color-primary-highlight: rgba(97,169,179,0.14);
       }
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-      scroll-behavior: smooth;
-      text-size-adjust: none;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility; scroll-behavior: smooth; text-size-adjust: none;
     }
     body {
-      min-height: 100dvh;
-      font-family: var(--font-body);
-      font-size: var(--text-base);
-      line-height: 1.6;
-      color: var(--color-text);
+      min-height: 100dvh; font-family: var(--font-body); font-size: var(--text-base);
+      line-height: 1.6; color: var(--color-text);
       background:
         radial-gradient(circle at top left, color-mix(in srgb, var(--color-primary) 8%, transparent) 0, transparent 28%),
         linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
@@ -168,506 +118,148 @@
     button { border: none; background: none; cursor: pointer; }
     :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
     ::selection { background: color-mix(in srgb, var(--color-primary) 24%, transparent); }
+    .skip-link { position: absolute; left: -9999px; top: auto; }
+    .skip-link:focus { left: var(--space-4); top: var(--space-4); z-index: 100; background: var(--color-surface-2); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
+    .container { width: min(100% - 2rem, var(--content-default)); margin-inline: auto; }
 
-    .skip-link {
-      position: absolute;
-      left: -9999px;
-      top: auto;
-    }
-    .skip-link:focus {
-      left: var(--space-4);
-      top: var(--space-4);
-      z-index: 100;
-      background: var(--color-surface-2);
-      padding: var(--space-3) var(--space-4);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-    }
+    /* NAV */
+    .site-header { position: sticky; top: 0; z-index: 40; border-bottom: 1px solid transparent; background: color-mix(in srgb, var(--color-bg) 82%, transparent); backdrop-filter: blur(18px); }
+    .site-header.scrolled { border-bottom-color: var(--color-border); box-shadow: var(--shadow-sm); }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: var(--space-4); }
+    .brand { display: inline-flex; align-items: center; gap: var(--space-3); min-height: 44px; font-size: var(--text-sm); font-weight: 700; letter-spacing: -0.02em; }
+    .brand img.logo { width: 152px; height: auto; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: var(--space-2); }
+    .nav-link, .theme-toggle, .cta-inline { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.75rem 1rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; }
+    .nav-link { color: var(--color-text-muted); }
+    .nav-link:hover { color: var(--color-text); background: var(--color-primary-highlight); }
+    .theme-toggle { width: 44px; padding: 0; color: var(--color-text-muted); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 82%, transparent); }
+    .theme-toggle:hover { color: var(--color-text); background: var(--color-surface-2); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 48px; padding: 0.9rem 1.2rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 700; letter-spacing: -0.01em; transition: transform var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), box-shadow var(--transition-interactive); }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { color: var(--color-text-inverse); background: var(--color-primary); box-shadow: var(--shadow-md); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-secondary { color: var(--color-text); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 92%, transparent); }
+    .btn-secondary:hover { background: var(--color-surface-2); }
 
-    .container {
-      width: min(100% - 2rem, var(--content-default));
-      margin-inline: auto;
-    }
+    /* HERO */
+    .hero { padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 6rem); }
+    .hero-grid { display: grid; gap: var(--space-8); align-items: center; grid-template-columns: 1.1fr 0.9fr; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.45rem 0.8rem; border-radius: var(--radius-full); background: var(--color-primary-highlight); color: var(--color-primary); font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--space-5); }
+    .eyebrow::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: currentColor; opacity: 0.8; }
+    h1 { font-family: var(--font-body); font-size: var(--text-2xl); line-height: 1.02; font-weight: 800; letter-spacing: -0.055em; max-width: 13ch; }
+    .hero-copy p { margin-top: var(--space-5); color: var(--color-text-muted); max-width: 58ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 0.8rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 88%, transparent); }
+    .hero-card { position: relative; padding: var(--space-6); border-radius: calc(var(--radius-xl) + 0.25rem); background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-2) 98%, transparent), color-mix(in srgb, var(--color-surface) 92%, transparent)); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); overflow: hidden; isolation: isolate; }
+    .hero-card::after { content: ""; position: absolute; inset: auto -15% -30% auto; width: 220px; aspect-ratio: 1; border-radius: 50%; background: color-mix(in srgb, var(--color-primary) 18%, transparent); filter: blur(24px); z-index: -1; }
+    .metric-stack { display: grid; gap: var(--space-4); }
+    .metric-main { padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-divider); }
+    .metric-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); font-weight: 700; }
+    .metric-value { margin-top: var(--space-2); font-size: clamp(2rem, 4vw, 3rem); line-height: 1; font-weight: 800; letter-spacing: -0.05em; }
+    .metric-sub { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .mini-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+    .mini-card { padding: var(--space-4); border-radius: var(--radius-lg); background: color-mix(in srgb, var(--color-surface-offset) 78%, transparent); border: 1px solid var(--color-border); }
+    .mini-card strong { display: block; font-size: var(--text-lg); line-height: 1.1; letter-spacing: -0.03em; margin-top: var(--space-2); }
+    .mini-card span { display: block; color: var(--color-text-muted); font-size: var(--text-sm); margin-top: var(--space-1); }
 
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      border-bottom: 1px solid transparent;
-      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
-      backdrop-filter: blur(18px);
-    }
-    .site-header.scrolled {
-      border-bottom-color: var(--color-border);
-      box-shadow: var(--shadow-sm);
-    }
-    .nav {
+    /* SECTIONS */
+    .section { padding: clamp(3rem, 7vw, 5rem) 0; }
+    .section-head { display: grid; gap: var(--space-3); margin-bottom: var(--space-8); max-width: 700px; }
+    .section-head h2 { font-size: var(--text-xl); line-height: 1.08; letter-spacing: -0.045em; font-weight: 800; }
+    .section-head p { color: var(--color-text-muted); }
+    .steps, .proof-grid, .faq-grid, .fit-grid { display: grid; gap: var(--space-4); }
+    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .proof-grid, .fit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .faq-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card { height: 100%; padding: var(--space-6); border-radius: var(--radius-xl); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 94%, transparent); box-shadow: var(--shadow-sm); }
+    .card-kicker { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--color-primary-highlight); color: var(--color-primary); font-size: var(--text-xs); font-weight: 800; margin-bottom: var(--space-4); }
+    .card h3 { font-size: var(--text-lg); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: var(--space-3); }
+    .card p, .card li { color: var(--color-text-muted); }
+    .card ul { list-style: none; display: grid; gap: var(--space-3); }
+    .card li { position: relative; padding-left: 1rem; }
+    .card li::before { content: ""; position: absolute; left: 0; top: 0.62rem; width: 0.38rem; height: 0.38rem; border-radius: 50%; background: var(--color-primary); }
+    .fit-card { display: grid; gap: var(--space-4); align-content: start; }
+    .fit-card .label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--color-text-muted); }
+
+    /* PAIN */
+    .pain-section { padding: clamp(3rem, 7vw, 5rem) 0; background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface)); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .pain-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-12); align-items: start; }
+    .pain-left h2 { font-size: var(--text-xl); line-height: 1.08; letter-spacing: -0.045em; font-weight: 800; margin-bottom: var(--space-6); }
+    .pain-cards { display: grid; gap: var(--space-4); }
+    .pain-card { padding: var(--space-5); border-radius: var(--radius-lg); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 88%, transparent); }
+    .pain-card h3 { font-size: var(--text-base); font-weight: 700; letter-spacing: -0.02em; margin-bottom: var(--space-2); }
+    .pain-card p { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .pain-callout { margin-top: var(--space-6); padding: var(--space-5); border-radius: var(--radius-lg); border-left: 3px solid var(--color-primary); background: color-mix(in srgb, var(--color-primary) 7%, var(--color-surface-2)); font-size: var(--text-base); font-weight: 600; letter-spacing: -0.02em; color: var(--color-text); font-style: italic; }
+    .pain-right { display: grid; gap: var(--space-5); padding-top: var(--space-8); }
+    .stat-card { padding: var(--space-6); border-radius: var(--radius-xl); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-2) 94%, transparent); box-shadow: var(--shadow-md); }
+    .stat-card .stat-number { font-size: clamp(2.4rem, 5vw, 3.5rem); font-weight: 800; line-height: 1; letter-spacing: -0.06em; color: var(--color-primary); }
+    .stat-card .stat-label { margin-top: var(--space-3); color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+
+    /* ABOUT */
+    .about-section { padding: clamp(3rem, 7vw, 5rem) 0; border-top: 1px solid var(--color-border); }
+    .about-grid { display: grid; grid-template-columns: auto 1fr; gap: clamp(var(--space-8), 6vw, var(--space-16)); align-items: center; }
+    .about-photo-wrap { position: relative; flex-shrink: 0; }
+    .about-photo-wrap::before { content: ""; position: absolute; inset: -10px; border-radius: calc(var(--radius-xl) + 14px); border: 2px solid var(--color-primary-highlight); pointer-events: none; }
+    .about-photo { width: 280px; max-width: 280px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); display: block; }
+    .about-copy { display: grid; gap: var(--space-5); }
+    .about-copy h2 { font-size: var(--text-xl); line-height: 1.08; letter-spacing: -0.045em; font-weight: 800; }
+    .about-copy p { color: var(--color-text-muted); max-width: 60ch; }
+    .about-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .about-tag { display: inline-flex; align-items: center; padding: 0.35rem 0.75rem; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface-offset) 80%, transparent); color: var(--color-text-muted); }
+    .about-cta { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--color-primary); font-weight: 700; font-size: var(--text-sm); transition: gap var(--transition-interactive); }
+    .about-cta:hover { gap: 0.65rem; }
+
+    /* ===== PILOT FORM — conversion-optimised ===== */
+    .pilot-section { padding: clamp(3rem, 7vw, 5rem) 0; }
+
+    /* Scarcity bar above the shell */
+    .pilot-scarcity {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: 76px;
-      gap: var(--space-4);
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
+      flex-wrap: wrap;
       gap: var(--space-3);
-      min-height: 44px;
-      font-size: var(--text-sm);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    .brand img.logo {
-      width: 152px;
-      height: auto;
-      object-fit: contain;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: var(--space-2);
-    }
-    .nav-link,
-    .theme-toggle,
-    .cta-inline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius-full);
-      font-size: var(--text-sm);
-      font-weight: 600;
-    }
-    .nav-link { color: var(--color-text-muted); }
-    .nav-link:hover { color: var(--color-text); background: var(--color-primary-highlight); }
-    .theme-toggle {
-      width: 44px;
-      padding: 0;
-      color: var(--color-text-muted);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 82%, transparent);
-    }
-    .theme-toggle:hover { color: var(--color-text); background: var(--color-surface-2); }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      min-height: 48px;
-      padding: 0.9rem 1.2rem;
-      border-radius: var(--radius-full);
-      font-size: var(--text-sm);
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      transition: transform var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), box-shadow var(--transition-interactive);
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary {
-      color: var(--color-text-inverse);
-      background: var(--color-primary);
-      box-shadow: var(--shadow-md);
-    }
-    .btn-primary:hover { background: var(--color-primary-hover); }
-    .btn-secondary {
-      color: var(--color-text);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 92%, transparent);
-    }
-    .btn-secondary:hover { background: var(--color-surface-2); }
-
-    /* ── HERO ── */
-    .hero {
-      padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 6rem);
-    }
-    .hero-grid {
-      display: grid;
-      gap: var(--space-8);
-      align-items: center;
-      grid-template-columns: 1.1fr 0.9fr;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.45rem 0.8rem;
-      border-radius: var(--radius-full);
-      background: var(--color-primary-highlight);
-      color: var(--color-primary);
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
       margin-bottom: var(--space-5);
+      padding: var(--space-4) var(--space-5);
+      border-radius: var(--radius-lg);
+      background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface-2));
+      border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
     }
-    .eyebrow::before {
-      content: "";
-      width: 0.5rem;
-      height: 0.5rem;
-      border-radius: 50%;
-      background: currentColor;
-      opacity: 0.8;
-    }
-    h1 {
-      font-family: var(--font-display);
-      font-size: var(--text-2xl);
-      line-height: 1.02;
-      font-weight: 800;
-      letter-spacing: -0.055em;
-      max-width: 13ch;
-    }
-    .hero-copy p {
-      margin-top: var(--space-5);
-      color: var(--color-text-muted);
-      max-width: 58ch;
-    }
-    .hero-actions {
+    .pilot-scarcity-left {
       display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      margin-top: var(--space-6);
-    }
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      margin-top: var(--space-6);
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-    }
-    .hero-meta span {
-      display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
-      padding: 0.55rem 0.8rem;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 88%, transparent);
-    }
-
-    .hero-card {
-      position: relative;
-      padding: var(--space-6);
-      border-radius: calc(var(--radius-xl) + 0.25rem);
-      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-2) 98%, transparent), color-mix(in srgb, var(--color-surface) 92%, transparent));
-      border: 1px solid var(--color-border);
-      box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      isolation: isolate;
-    }
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      inset: auto -15% -30% auto;
-      width: 220px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: color-mix(in srgb, var(--color-primary) 18%, transparent);
-      filter: blur(24px);
-      z-index: -1;
-    }
-    .metric-stack {
-      display: grid;
-      gap: var(--space-4);
-    }
-    .metric-main {
-      padding-bottom: var(--space-4);
-      border-bottom: 1px solid var(--color-divider);
-    }
-    .metric-label {
-      font-size: var(--text-xs);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--color-text-muted);
-      font-weight: 700;
-    }
-    .metric-value {
-      margin-top: var(--space-2);
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1;
-      font-weight: 800;
-      letter-spacing: -0.05em;
-    }
-    .metric-sub {
-      margin-top: var(--space-2);
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-    }
-    .mini-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: var(--space-4);
-    }
-    .mini-card {
-      padding: var(--space-4);
-      border-radius: var(--radius-lg);
-      background: color-mix(in srgb, var(--color-surface-offset) 78%, transparent);
-      border: 1px solid var(--color-border);
-    }
-    .mini-card strong {
-      display: block;
-      font-size: var(--text-lg);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      margin-top: var(--space-2);
-    }
-    .mini-card span {
-      display: block;
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-      margin-top: var(--space-1);
-    }
-
-    /* ── SECTION BASE ── */
-    .section {
-      padding: clamp(3rem, 7vw, 5rem) 0;
-    }
-    .section-head {
-      display: grid;
       gap: var(--space-3);
-      margin-bottom: var(--space-8);
-      max-width: 700px;
-    }
-    .section-head h2 {
-      font-size: var(--text-xl);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
-      font-weight: 800;
-    }
-    .section-head p { color: var(--color-text-muted); }
-
-    /* ── GRIDS ── */
-    .steps,
-    .proof-grid,
-    .faq-grid,
-    .fit-grid {
-      display: grid;
-      gap: var(--space-4);
-    }
-    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .proof-grid,
-    .fit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .faq-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-    /* ── CARDS ── */
-    .card {
-      height: 100%;
-      padding: var(--space-6);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 94%, transparent);
-      box-shadow: var(--shadow-sm);
-    }
-    .card-kicker {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background: var(--color-primary-highlight);
-      color: var(--color-primary);
-      font-size: var(--text-xs);
-      font-weight: 800;
-      margin-bottom: var(--space-4);
-    }
-    .card h3 {
-      font-size: var(--text-lg);
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin-bottom: var(--space-3);
-    }
-    .card p,
-    .card li { color: var(--color-text-muted); }
-    .card ul {
-      list-style: none;
-      display: grid;
-      gap: var(--space-3);
-    }
-    .card li {
-      position: relative;
-      padding-left: 1rem;
-    }
-    .card li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.62rem;
-      width: 0.38rem;
-      height: 0.38rem;
-      border-radius: 50%;
-      background: var(--color-primary);
-    }
-
-    .fit-card {
-      display: grid;
-      gap: var(--space-4);
-      align-content: start;
-    }
-    .fit-card .label {
-      font-size: var(--text-xs);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 700;
-      color: var(--color-text-muted);
-    }
-
-    /* ── SOUND FAMILIAR SECTION ── */
-    .pain-section {
-      padding: clamp(3rem, 7vw, 5rem) 0;
-      background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface));
-      border-top: 1px solid var(--color-border);
-      border-bottom: 1px solid var(--color-border);
-    }
-    .pain-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: var(--space-12);
-      align-items: start;
-    }
-    .pain-left h2 {
-      font-size: var(--text-xl);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
-      font-weight: 800;
-      margin-bottom: var(--space-6);
-    }
-    .pain-cards {
-      display: grid;
-      gap: var(--space-4);
-    }
-    .pain-card {
-      padding: var(--space-5);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 88%, transparent);
-    }
-    .pain-card h3 {
-      font-size: var(--text-base);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: var(--space-2);
-    }
-    .pain-card p {
-      color: var(--color-text-muted);
       font-size: var(--text-sm);
-    }
-    .pain-callout {
-      margin-top: var(--space-6);
-      padding: var(--space-5);
-      border-radius: var(--radius-lg);
-      border-left: 3px solid var(--color-primary);
-      background: color-mix(in srgb, var(--color-primary) 7%, var(--color-surface-2));
-      font-size: var(--text-base);
       font-weight: 600;
-      letter-spacing: -0.02em;
-      color: var(--color-text);
-      font-style: italic;
-    }
-    .pain-right {
-      display: grid;
-      gap: var(--space-5);
-      padding-top: var(--space-8);
-    }
-    .stat-card {
-      padding: var(--space-6);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-2) 94%, transparent);
-      box-shadow: var(--shadow-md);
-    }
-    .stat-card .stat-number {
-      font-size: clamp(2.4rem, 5vw, 3.5rem);
-      font-weight: 800;
-      line-height: 1;
-      letter-spacing: -0.06em;
       color: var(--color-primary);
     }
-    .stat-card .stat-label {
-      margin-top: var(--space-3);
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-      line-height: 1.5;
-    }
-
-    /* ── ABOUT / FOUNDER SECTION ── */
-    .about-section {
-      padding: clamp(3rem, 7vw, 5rem) 0;
-      border-top: 1px solid var(--color-border);
-    }
-    .about-grid {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: clamp(var(--space-8), 6vw, var(--space-16));
-      align-items: center;
-    }
-    .about-photo-wrap {
-      position: relative;
+    .scarcity-dot {
+      width: 0.5rem; height: 0.5rem; border-radius: 50%;
+      background: var(--color-primary);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-primary) 22%, transparent);
       flex-shrink: 0;
     }
-    .about-photo-wrap::before {
-      content: "";
-      position: absolute;
-      inset: -10px;
-      border-radius: calc(var(--radius-xl) + 14px);
-      border: 2px solid var(--color-primary-highlight);
-      pointer-events: none;
-    }
-    .about-photo {
-      width: 280px;
-      max-width: 280px;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-lg);
-      display: block;
-    }
-    .about-copy {
-      display: grid;
-      gap: var(--space-5);
-    }
-    .about-copy h2 {
-      font-size: var(--text-xl);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
-      font-weight: 800;
-    }
-    .about-copy p {
-      color: var(--color-text-muted);
-      max-width: 60ch;
-    }
-    .about-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-    }
-    .about-tag {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.35rem 0.75rem;
-      border-radius: var(--radius-full);
+    .pilot-scarcity-right {
       font-size: var(--text-xs);
-      font-weight: 600;
-      border: 1px solid var(--color-border);
-      background: color-mix(in srgb, var(--color-surface-offset) 80%, transparent);
       color: var(--color-text-muted);
     }
-    .about-cta {
+    .scarcity-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      color: var(--color-primary);
+      gap: 0.35rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-full);
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      font-size: var(--text-xs);
       font-weight: 700;
-      font-size: var(--text-sm);
-      transition: gap var(--transition-interactive);
+      letter-spacing: 0.04em;
     }
-    .about-cta:hover { gap: 0.65rem; }
 
-    /* ── FORM ── */
     .form-shell {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.85fr 1.15fr;
       gap: var(--space-6);
       padding: var(--space-6);
       border-radius: calc(var(--radius-xl) + 0.25rem);
@@ -676,206 +268,96 @@
       box-shadow: var(--shadow-md);
       align-items: start;
     }
-    .form-note {
-      display: grid;
-      gap: var(--space-4);
-    }
-    .form-note h2 {
-      font-size: var(--text-xl);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
-      font-weight: 800;
-    }
-    .form-note p,
-    .form-note li {
-      color: var(--color-text-muted);
-    }
-    .form-note ul {
-      list-style: none;
+    .form-note { display: grid; gap: var(--space-4); }
+    .form-note h2 { font-size: var(--text-xl); line-height: 1.08; letter-spacing: -0.045em; font-weight: 800; }
+    .form-note > p { color: var(--color-text-muted); }
+
+    /* What you get after applying */
+    .form-perks {
       display: grid;
       gap: var(--space-3);
+      margin-top: var(--space-2);
     }
-    .form-note li {
-      padding-left: 1rem;
-      position: relative;
+    .form-perk {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
     }
-    .form-note li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.62rem;
-      width: 0.38rem;
-      height: 0.38rem;
-      border-radius: 50%;
-      background: var(--color-primary);
+    .form-perk-icon {
+      width: 30px; height: 30px; flex-shrink: 0;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-highlight);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
     }
+    .form-perk-text {}
+    .form-perk-label { font-size: var(--text-sm); font-weight: 700; color: var(--color-text); line-height: 1.2; }
+    .form-perk-desc { font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 2px; line-height: 1.4; }
+
+    .form-divider { height: 1px; background: var(--color-divider); margin: var(--space-2) 0; }
+
+    /* Reply promise */
+    .form-promise {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      background: color-mix(in srgb, var(--color-surface-offset) 72%, transparent);
+      border: 1px solid var(--color-border);
+    }
+    .form-promise-icon { font-size: 20px; flex-shrink: 0; }
+    .form-promise-text { font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.4; }
+    .form-promise-text strong { color: var(--color-text); font-weight: 700; }
+
     .tally-wrap {
       padding: var(--space-3);
       border-radius: var(--radius-xl);
       background: color-mix(in srgb, var(--color-surface-offset) 72%, transparent);
       border: 1px solid var(--color-border);
-      min-height: 620px;
+      min-height: 540px;
     }
-    .tally-wrap iframe {
-      width: 100%;
-      min-height: 580px;
-      border: 0;
-      border-radius: calc(var(--radius-xl) - var(--space-3));
-      background: transparent;
-    }
+    .tally-wrap iframe { width: 100%; min-height: 500px; border: 0; border-radius: calc(var(--radius-xl) - var(--space-3)); background: transparent; }
+    /* ===== END PILOT FORM ===== */
 
-    /* ── FOOTER ── */
-    .footer {
-      padding: var(--space-10) 0 var(--space-12);
-      border-top: 1px solid var(--color-border);
-      margin-top: var(--space-4);
-    }
-    .footer-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-4);
-    }
-    .footer-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-3);
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-    }
-    .footer-brand img {
-      width: 120px;
-      height: auto;
-    }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-    }
-    .footer-links button {
-      min-height: 44px;
-      padding: 0.75rem 0.95rem;
-      border-radius: var(--radius-full);
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-    }
-    .footer-links button:hover {
-      background: var(--color-primary-highlight);
-      color: var(--color-text);
-    }
+    /* FOOTER */
+    .footer { padding: var(--space-10) 0 var(--space-12); border-top: 1px solid var(--color-border); margin-top: var(--space-4); }
+    .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); }
+    .footer-brand { display: inline-flex; align-items: center; gap: var(--space-3); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .footer-brand img { width: 120px; height: auto; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .footer-links button { min-height: 44px; padding: 0.75rem 0.95rem; border-radius: var(--radius-full); font-size: var(--text-sm); color: var(--color-text-muted); }
+    .footer-links button:hover { background: var(--color-primary-highlight); color: var(--color-text); }
 
-    /* ── MODALS ── */
-    .modal {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: var(--space-4);
-      z-index: 90;
-    }
+    /* MODALS */
+    .modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: var(--space-4); z-index: 90; }
     .modal.is-open { display: flex; }
-    .modal-backdrop {
-      position: absolute;
-      inset: 0;
-      background: rgba(10, 14, 20, 0.56);
-      backdrop-filter: blur(10px);
-    }
-    .modal-panel {
-      position: relative;
-      width: min(100%, 860px);
-      max-height: min(88dvh, 860px);
-      overflow: auto;
-      border-radius: calc(var(--radius-xl) + 0.25rem);
-      background: var(--color-surface-2);
-      border: 1px solid var(--color-border);
-      box-shadow: var(--shadow-lg);
-      padding: var(--space-6);
-    }
-    .modal-top {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: var(--space-4);
-      margin-bottom: var(--space-5);
-      padding-bottom: var(--space-4);
-      border-bottom: 1px solid var(--color-divider);
-    }
-    .modal-top h2 {
-      font-size: var(--text-xl);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-      font-weight: 800;
-    }
-    .modal-close {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1px solid var(--color-border);
-      background: var(--color-surface);
-      color: var(--color-text-muted);
-      flex-shrink: 0;
-    }
+    .modal-backdrop { position: absolute; inset: 0; background: rgba(10, 14, 20, 0.56); backdrop-filter: blur(10px); }
+    .modal-panel { position: relative; width: min(100%, 860px); max-height: min(88dvh, 860px); overflow: auto; border-radius: calc(var(--radius-xl) + 0.25rem); background: var(--color-surface-2); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); padding: var(--space-6); }
+    .modal-top { display: flex; align-items: start; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-5); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-divider); }
+    .modal-top h2 { font-size: var(--text-xl); line-height: 1.08; letter-spacing: -0.04em; font-weight: 800; }
+    .modal-close { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-muted); flex-shrink: 0; }
     .modal-close:hover { color: var(--color-text); background: var(--color-surface-offset); }
-    .legal-copy {
-      display: grid;
-      gap: var(--space-5);
-      color: var(--color-text-muted);
-    }
-    .legal-copy section {
-      display: grid;
-      gap: var(--space-3);
-    }
-    .legal-copy h3 {
-      color: var(--color-text);
-      font-size: var(--text-lg);
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-    }
-    .legal-copy ul {
-      padding-left: 1.2rem;
-      display: grid;
-      gap: var(--space-2);
-    }
+    .legal-copy { display: grid; gap: var(--space-5); color: var(--color-text-muted); }
+    .legal-copy section { display: grid; gap: var(--space-3); }
+    .legal-copy h3 { color: var(--color-text); font-size: var(--text-lg); line-height: 1.15; letter-spacing: -0.03em; }
+    .legal-copy ul { padding-left: 1.2rem; display: grid; gap: var(--space-2); }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 1024px) {
-      .hero-grid,
-      .form-shell,
-      .steps,
-      .proof-grid,
-      .faq-grid,
-      .fit-grid,
-      .pain-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero-grid, .form-shell, .steps, .proof-grid, .faq-grid, .fit-grid, .pain-grid, .about-grid { grid-template-columns: 1fr; }
       h1 { max-width: 12ch; }
-      .tally-wrap { min-height: 680px; }
-      .tally-wrap iframe { min-height: 640px; }
+      .tally-wrap { min-height: 560px; }
+      .tally-wrap iframe { min-height: 520px; }
       .pain-right { padding-top: 0; }
       .about-photo-wrap { justify-self: center; }
       .about-photo { max-width: 240px; width: 240px; }
     }
-
     @media (max-width: 760px) {
-      .nav {
-        min-height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: var(--space-3) 0;
-        gap: var(--space-2);
-      }
+      .nav { min-height: auto; flex-direction: row; flex-wrap: wrap; align-items: center; padding: var(--space-3) 0; gap: var(--space-2); }
       .brand { flex: 1 1 auto; }
       .brand img.logo { width: 130px; }
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: var(--space-2);
-        flex-wrap: nowrap;
-      }
+      .nav-links { display: flex; align-items: center; gap: var(--space-2); flex-wrap: nowrap; }
       .nav-link { display: none; }
       .cta-inline { white-space: nowrap; }
       .hero { padding-top: var(--space-10); }
@@ -885,62 +367,18 @@
       .hero-actions .btn { flex: 1 1 auto; }
       .footer-row { align-items: flex-start; flex-direction: column; }
       .modal { align-items: end; padding: var(--space-2); }
-      .modal-panel {
-        width: 100%;
-        max-height: 92dvh;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
+      .modal-panel { width: 100%; max-height: 92dvh; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
       .about-photo { max-width: 200px; width: 200px; }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
     }
 
-    /* ── LANGUAGE TOGGLE ── */
-    .lang-toggle {
-      display: inline-flex;
-      align-items: center;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-full);
-      background: color-mix(in srgb, var(--color-surface-2) 82%, transparent);
-      padding: 3px;
-      height: 44px;
-      gap: 0;
-    }
-    .lang-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 36px;
-      min-width: 40px;
-      padding: 0 0.75rem;
-      border-radius: var(--radius-full);
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      color: var(--color-text-muted);
-      background: none;
-      border: none;
-      cursor: pointer;
-      transition: background var(--transition-interactive), color var(--transition-interactive);
-      user-select: none;
-    }
-    .lang-btn.active {
-      background: var(--color-primary);
-      color: var(--color-text-inverse);
-    }
-    .lang-btn:not(.active):hover {
-      background: var(--color-primary-highlight);
-      color: var(--color-primary);
-    }
-
+    /* LANG TOGGLE */
+    .lang-toggle { display: inline-flex; align-items: center; border: 1px solid var(--color-border); border-radius: var(--radius-full); background: color-mix(in srgb, var(--color-surface-2) 82%, transparent); padding: 3px; height: 44px; gap: 0; }
+    .lang-btn { display: inline-flex; align-items: center; justify-content: center; height: 36px; min-width: 40px; padding: 0 0.75rem; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.05em; color: var(--color-text-muted); background: none; border: none; cursor: pointer; transition: background var(--transition-interactive), color var(--transition-interactive); user-select: none; }
+    .lang-btn.active { background: var(--color-primary); color: var(--color-text-inverse); }
+    .lang-btn:not(.active):hover { background: var(--color-primary-highlight); color: var(--color-primary); }
   </style>
 </head>
 <body>
@@ -1009,9 +447,9 @@
                 <span data-i18n="card.result.sub">You only pay when we produce a result.</span>
               </div>
               <div class="mini-card">
-                <div class="metric-label" data-i18n="card.input2.label">Input</div>
-                <strong data-i18n="card.input2.title">Your cold list</strong>
-                <span data-i18n="card.input2.sub">An export of old leads, ex-members or failed trials.</span>
+                <div class="metric-label" data-i18n="card.input2.label">Timeline</div>
+                <strong data-i18n="card.input2.title">2–3 weeks</strong>
+                <span data-i18n="card.input2.sub">From list upload to first booked conversations.</span>
               </div>
             </div>
           </div>
@@ -1032,14 +470,14 @@
               </div>
               <div class="pain-card">
                 <h3 data-i18n="pain.card2.h3">Email blasts that go nowhere</h3>
-                <p data-i18n="pain.card2.p">You’ve tried the newsletter. 4 opens, zero replies, one unsubscribe.</p>
+                <p data-i18n="pain.card2.p">You've tried the newsletter. 4 opens, zero replies, one unsubscribe.</p>
               </div>
               <div class="pain-card">
                 <h3 data-i18n="pain.card3.h3">Acquisition costs keep climbing</h3>
                 <p data-i18n="pain.card3.p">Every new lead costs more. Meanwhile, people who already know your gym are being ignored.</p>
               </div>
             </div>
-            <blockquote class="pain-callout" data-i18n="pain.callout">That list isn’t dead. It just hasn’t had the right message yet.</blockquote>
+            <blockquote class="pain-callout" data-i18n="pain.callout">That list isn't dead. It just hasn't had the right message yet.</blockquote>
           </div>
           <div class="pain-right">
             <div class="stat-card">
@@ -1076,7 +514,7 @@
           <article class="card">
             <div class="card-kicker">03</div>
             <h3 data-i18n="how.step3.h3">You pay for results</h3>
-            <p data-i18n="how.step3.p">If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn’t, you owe nothing.</p>
+            <p data-i18n="how.step3.p">If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn't, you owe nothing.</p>
           </article>
         </div>
       </div>
@@ -1090,10 +528,10 @@
             <img class="about-photo" src="./profile.png" alt="Founder of ICP Beacon" width="280" height="280" loading="lazy" />
           </div>
           <div class="about-copy">
-            <div class="eyebrow" data-i18n="about.eyebrow">Who’s behind this</div>
+            <div class="eyebrow" data-i18n="about.eyebrow">Who's behind this</div>
             <h2 id="about-heading" data-i18n="about.h2">Built lean, on purpose.</h2>
-            <p data-i18n="about.p1">I’m Oli, a software engineer with 12 years building products for companies that needed to do more with less. I’ve seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.</p>
-            <p data-i18n="about.p2">ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don’t have a marketing department or time to learn new platforms.</p>
+            <p data-i18n="about.p1">I'm Oli, a software engineer with 12 years building products for companies that needed to do more with less. I've seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.</p>
+            <p data-i18n="about.p2">ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don't have a marketing department or time to learn new platforms.</p>
             <div class="about-tags">
               <span class="about-tag" data-i18n="about.tag1">12 yrs in tech</span>
               <span class="about-tag" data-i18n="about.tag2">Avid entrepreneur</span>
@@ -1172,35 +610,88 @@
           </article>
           <article class="card">
             <h3 data-i18n="faq.q2.h3">How does pricing work?</h3>
-            <p data-i18n="faq.q2.p">Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.</p>
+            <p data-i18n="faq.q2.p">Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.</p>
           </article>
           <article class="card">
             <h3 data-i18n="faq.q3.h3">Does this work in my country?</h3>
-            <p data-i18n="faq.q3.p">Yes. We’re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.</p>
+            <p data-i18n="faq.q3.p">Yes. We're currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FORM -->
-    <section class="section" id="pilot">
-      <div class="container form-shell">
-        <div class="form-note">
-          <div class="eyebrow" data-i18n="form.eyebrow">Free pilot application</div>
-          <h2 data-i18n="form.h2">Apply for a free pilot.</h2>
-          <p data-i18n="form.p">Takes 2 minutes. We review every application and reply within 24h. No commitment required.</p>
-          <ul>
-            <li data-i18n="form.li1">Best for gyms with 200+ contacts in their existing database.</li>
-            <li data-i18n="form.li2">Performance-based — you only pay if we produce results.</li>
-            <li data-i18n="form.li3">No new software, no contracts, no setup fees.</li>
-          </ul>
+    <!-- PILOT FORM — conversion-optimised -->
+    <section class="pilot-section" id="pilot">
+      <div class="container">
+
+        <!-- Scarcity bar -->
+        <div class="pilot-scarcity">
+          <div class="pilot-scarcity-left">
+            <span class="scarcity-dot"></span>
+            <span data-i18n="pilot.scarcity.text">Only reviewing 3 new gyms this month — we keep pilots small to give each one proper attention.</span>
+          </div>
+          <span class="scarcity-badge" data-i18n="pilot.scarcity.badge">🔒 Limited spots</span>
         </div>
-        <div class="tally-wrap">
-          <iframe
-            data-tally-src="https://tally.so/embed/7Rp0qR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            title="Get More Members Back — Free Pilot Application"
-          ></iframe>
+
+        <div class="form-shell">
+
+          <!-- Left: context + perks -->
+          <div class="form-note">
+            <div class="eyebrow" data-i18n="form.eyebrow">Free pilot application</div>
+            <h2 data-i18n="form.h2">Apply in 2 minutes. We reply within 24h.</h2>
+            <p data-i18n="form.p">No commitment. No upfront cost. We review every application and only take on gyms where we're confident we can produce results.</p>
+
+            <div class="form-perks">
+              <div class="form-perk">
+                <div class="form-perk-icon">📋</div>
+                <div class="form-perk-text">
+                  <div class="form-perk-label" data-i18n="form.perk1.label">Just 4 fields</div>
+                  <div class="form-perk-desc" data-i18n="form.perk1.desc">Name, email, gym name, and database size. That's it — no lengthy intake.</div>
+                </div>
+              </div>
+              <div class="form-perk">
+                <div class="form-perk-icon">⚡</div>
+                <div class="form-perk-text">
+                  <div class="form-perk-label" data-i18n="form.perk2.label">24h reply guaranteed</div>
+                  <div class="form-perk-desc" data-i18n="form.perk2.desc">Every application gets a personal response — not an automated sequence.</div>
+                </div>
+              </div>
+              <div class="form-perk">
+                <div class="form-perk-icon">🚫</div>
+                <div class="form-perk-text">
+                  <div class="form-perk-label" data-i18n="form.perk3.label">No cost, no contract</div>
+                  <div class="form-perk-desc" data-i18n="form.perk3.desc">Applying doesn't commit you to anything. You decide after we talk.</div>
+                </div>
+              </div>
+              <div class="form-perk">
+                <div class="form-perk-icon">💰</div>
+                <div class="form-perk-text">
+                  <div class="form-perk-label" data-i18n="form.perk4.label">Performance-based only</div>
+                  <div class="form-perk-desc" data-i18n="form.perk4.desc">You pay per booked conversation or rev-share. No result = no invoice.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-divider"></div>
+
+            <div class="form-promise">
+              <div class="form-promise-icon">👋</div>
+              <div class="form-promise-text">
+                <strong data-i18n="form.promise.strong">Oli replies personally.</strong>
+                <span data-i18n="form.promise.text"> Not a VA, not a bot. You'll hear back within 24 hours with a clear yes or a reason why it's not the right fit yet.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Tally form -->
+          <div class="tally-wrap">
+            <iframe
+              data-tally-src="https://tally.so/embed/7Rp0qR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              title="Apply for the free pilot"
+            ></iframe>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1238,7 +729,7 @@
         <section><h3 data-i18n="modal.privacy.s6h">Third-party services</h3><p data-i18n="modal.privacy.s6p">This site uses an embedded third-party form provider to display and manage the application form. Information submitted through the form may be processed through that provider according to its own infrastructure and terms.</p></section>
         <section><h3 data-i18n="modal.privacy.s7h">Retention</h3><p data-i18n="modal.privacy.s7p">Information is retained only for as long as reasonably necessary to manage the enquiry, evaluate the pilot opportunity, and comply with applicable legal obligations.</p></section>
         <section><h3 data-i18n="modal.privacy.s8h">Rights</h3><p data-i18n="modal.privacy.s8p">Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection where relevant.</p></section>
-        <section><h3 data-i18n="modal.privacy.s9h">International processing</h3><p data-i18n="modal.privacy.s9p">Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor’s own location, subject to applicable safeguards where required.</p></section>
+        <section><h3 data-i18n="modal.privacy.s9h">International processing</h3><p data-i18n="modal.privacy.s9p">Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor's own location, subject to applicable safeguards where required.</p></section>
         <section><h3 data-i18n="modal.privacy.s10h">Policy updates</h3><p data-i18n="modal.privacy.s10p">This privacy policy may be updated from time to time to reflect changes in the website, the qualification process, or legal requirements.</p></section>
       </div>
     </div>
@@ -1256,14 +747,14 @@
       </div>
       <div class="legal-copy">
         <section><h3 data-i18n="modal.terms.s1h">Use of the site</h3><p data-i18n="modal.terms.s1p">This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.</p></section>
-        <section><h3 data-i18n="modal.terms.s2h">No promise of results</h3><p data-i18n="modal.terms.s2p">Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results. Any future engagement would depend on the specific circumstances of the business and the agreed scope.</p></section>
+        <section><h3 data-i18n="modal.terms.s2h">No promise of results</h3><p data-i18n="modal.terms.s2p">Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results.</p></section>
         <section><h3 data-i18n="modal.terms.s3h">Eligibility</h3><p data-i18n="modal.terms.s3p">The form and related materials are intended for businesses and authorised representatives acting on behalf of a business, not for personal consumer use.</p></section>
         <section><h3 data-i18n="modal.terms.s4h">Submitted information</h3><p data-i18n="modal.terms.s4p">By submitting the application form, the visitor confirms that the information provided is accurate to the best of their knowledge and that they are authorised to submit it for business evaluation purposes.</p></section>
         <section><h3 data-i18n="modal.terms.s5h">Intellectual property</h3><p data-i18n="modal.terms.s5p">All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights unless otherwise stated.</p></section>
-        <section><h3 data-i18n="modal.terms.s6h">Acceptable use</h3><p data-i18n="modal.terms.s6p">Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.</p></section>
+        <section><h3 data-i18n="modal.terms.s6h">Acceptable use</h3><p data-i18n="modal.terms.s6p">Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.</path></p></section>
         <section><h3 data-i18n="modal.terms.s7h">Third-party tools</h3><p data-i18n="modal.terms.s7p">The site may rely on third-party services for forms, analytics, hosting, or related functionality. Availability and performance may depend in part on those services.</p></section>
         <section><h3 data-i18n="modal.terms.s8h">Changes and availability</h3><p data-i18n="modal.terms.s8p">The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.</p></section>
-        <section><h3 data-i18n="modal.terms.s9h">Limitation</h3><p data-i18n="modal.terms.s9p">To the fullest extent permitted by law, the site is provided on an “as is” and “as available” basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p></section>
+        <section><h3 data-i18n="modal.terms.s9h">Limitation</h3><p data-i18n="modal.terms.s9p">To the fullest extent permitted by law, the site is provided on an "as is" and "as available" basis, without warranties of any kind regarding uninterrupted availability, accuracy, or fitness for a particular purpose.</p></section>
       </div>
     </div>
   </div>
@@ -1271,13 +762,11 @@
   <script async src="https://tally.so/widgets/embed.js"></script>
   <script>
   (() => {
-    /* ── THEME ── */
     const root = document.documentElement;
     const themeBtn = document.querySelector('[data-theme-toggle]');
     let theme = localStorage.getItem('icpb-theme') ||
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     root.setAttribute('data-theme', theme);
-
     const renderTheme = () => {
       themeBtn.innerHTML = theme === 'dark'
         ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
@@ -1292,17 +781,12 @@
       renderTheme();
     });
 
-    /* ── SCROLL HEADER ── */
     const header = document.getElementById('site-header');
     const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    /* ── MODALS ── */
-    const modalMap = {
-      privacy: document.getElementById('modal-privacy'),
-      terms: document.getElementById('modal-terms')
-    };
+    const modalMap = { privacy: document.getElementById('modal-privacy'), terms: document.getElementById('modal-terms') };
     let activeModal = null, lastTrigger = null;
     const closeModal = () => {
       if (!activeModal) return;
@@ -1327,277 +811,154 @@
     document.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', closeModal));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    /* ── TRANSLATIONS ── */
     const i18n = {
       en: {
-        'nav.howItWorks': 'How it works',
-        'nav.pilot': 'Pilot',
-        'nav.applyNow': 'Apply now',
+        'nav.howItWorks': 'How it works', 'nav.pilot': 'Pilot', 'nav.applyNow': 'Apply now',
         'hero.eyebrow': 'Gym member reactivation',
         'hero.h1': 'You already paid for those leads. Time to get something back.',
         'hero.p': 'We run a short SMS reactivation pilot on your cold contact list — ex-members, old enquiries, stale trials. No new software. No upfront cost. You only pay if it works.',
-        'hero.cta1': 'Apply for the pilot',
-        'hero.cta2': 'See how it works',
-        'hero.meta1': 'No upfront cost',
-        'hero.meta2': 'For gyms and studios',
-        'hero.meta3': 'Results in 2–3 weeks',
-        'card.inputLabel': 'What goes in',
-        'card.inputValue': 'Your cold list',
+        'hero.cta1': 'Apply for the pilot', 'hero.cta2': 'See how it works',
+        'hero.meta1': 'No upfront cost', 'hero.meta2': 'For gyms and studios', 'hero.meta3': 'Results in 2–3 weeks',
+        'card.inputLabel': 'What goes in', 'card.inputValue': 'Your cold list',
         'card.inputSub': 'An export of old leads, ex-members or failed trials.',
-        'card.exec.label': 'Execution',
-        'card.exec.title': 'SMS reactivation pilot',
-        'card.exec.sub': 'We handle the outreach. You just review the replies.',
-        'card.focus.label': 'Focus',
-        'card.focus.title': 'Booked conversations',
-        'card.focus.sub': 'We push toward visit intent or membership calls.',
-        'card.result.label': 'Result',
-        'card.result.title': 'Performance-based',
-        'card.result.sub': 'You only pay when we produce a result.',
-        'card.input2.label': 'Input',
-        'card.input2.title': 'Your cold list',
-        'card.input2.sub': 'An export of old leads, ex-members or failed trials.',
+        'card.exec.label': 'Execution', 'card.exec.title': 'SMS reactivation pilot', 'card.exec.sub': 'We handle the outreach. You just review the replies.',
+        'card.focus.label': 'Focus', 'card.focus.title': 'Booked conversations', 'card.focus.sub': 'We push toward visit intent or membership calls.',
+        'card.result.label': 'Result', 'card.result.title': 'Performance-based', 'card.result.sub': 'You only pay when we produce a result.',
+        'card.input2.label': 'Timeline', 'card.input2.title': '2–3 weeks', 'card.input2.sub': 'From list upload to first booked conversations.',
         'pain.h2': 'Sound familiar?',
-        'pain.card1.h3': 'That list from 8 months ago',
-        'pain.card1.p': 'You stopped calling those 300 leads. The front desk moved on. The database just... sits there.',
-        'pain.card2.h3': 'Email blasts that go nowhere',
-        'pain.card2.p': 'You’ve tried the newsletter. 4 opens, zero replies, one unsubscribe.',
-        'pain.card3.h3': 'Acquisition costs keep climbing',
-        'pain.card3.p': 'Every new lead costs more. Meanwhile, people who already know your gym are being ignored.',
-        'pain.callout': 'That list isn’t dead. It just hasn’t had the right message yet.',
+        'pain.card1.h3': 'That list from 8 months ago', 'pain.card1.p': 'You stopped calling those 300 leads. The front desk moved on. The database just... sits there.',
+        'pain.card2.h3': 'Email blasts that go nowhere', 'pain.card2.p': 'You\'ve tried the newsletter. 4 opens, zero replies, one unsubscribe.',
+        'pain.card3.h3': 'Acquisition costs keep climbing', 'pain.card3.p': 'Every new lead costs more. Meanwhile, people who already know your gym are being ignored.',
+        'pain.callout': 'That list isn\'t dead. It just hasn\'t had the right message yet.',
         'pain.stat1': 'average SMS reply rate on cold reactivation lists (vs. 3–8% for email)',
         'pain.stat2': 'typical time from list upload to first booked conversations',
-        'how.h2': 'How the pilot works',
-        'how.p': 'Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.',
-        'how.step1.h3': 'Send us your list',
-        'how.step1.p': 'A simple CSV export of old leads or ex-members. No special format needed. We review it and confirm fit within 24h.',
-        'how.step2.h3': 'We run the pilot',
-        'how.step2.p': 'We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.',
-        'how.step3.h3': 'You pay for results',
-        'how.step3.p': 'If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn’t, you owe nothing.',
-        'about.eyebrow': 'Who’s behind this',
-        'about.h2': 'Built lean, on purpose.',
-        'about.p1': 'I’m Oli, a software engineer with 12 years building products for companies that needed to do more with less. I’ve seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.',
-        'about.p2': 'ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don’t have a marketing department or time to learn new platforms.',
-        'about.tag1': '12 yrs in tech',
-        'about.tag2': 'Avid entrepreneur',
-        'about.tag3': 'Lean-first approach',
-        'about.tag4': 'Based in West Europe',
+        'how.h2': 'How the pilot works', 'how.p': 'Three steps. No new platforms. No long onboarding. Just a focused test of what your cold list can produce.',
+        'how.step1.h3': 'Send us your list', 'how.step1.p': 'A simple CSV export of old leads or ex-members. No special format needed. We review it and confirm fit within 24h.',
+        'how.step2.h3': 'We run the pilot', 'how.step2.p': 'We set up and send a targeted SMS sequence. We handle replies, qualify interest, and push toward a booked call or visit.',
+        'how.step3.h3': 'You pay for results', 'how.step3.p': 'If the pilot produces booked conversations or membership enquiries, we invoice. If it doesn\'t, you owe nothing.',
+        'about.eyebrow': 'Who\'s behind this', 'about.h2': 'Built lean, on purpose.',
+        'about.p1': 'I\'m Oli, a software engineer with 12 years building products for companies that needed to do more with less. I\'ve seen firsthand how most gyms have a hidden asset sitting in their database — and no system to activate it.',
+        'about.p2': 'ICP Beacon is the lean version of what enterprise sales teams use, adapted for independent gym owners who don\'t have a marketing department or time to learn new platforms.',
+        'about.tag1': '12 yrs in tech', 'about.tag2': 'Avid entrepreneur', 'about.tag3': 'Lean-first approach', 'about.tag4': 'Based in West Europe',
         'about.cta': '→ Apply for the pilot',
         'why.h2': 'Why this beats chasing more cold traffic',
         'why.p': 'Most gyms keep paying to acquire new attention while old enquiries and past members fade into the background. Reactivation is faster because the audience already knows the brand.',
-        'why.card1.label': 'Better use of existing demand',
-        'why.card1.h3': 'Old contacts are often the most overlooked asset.',
-        'why.card1.p': 'If a gym has already generated interest once, there may still be recoverable value sitting in old enquiries, failed trials, and former memberships.',
-        'why.card2.label': 'Less operational friction',
-        'why.card2.h3': 'No new software stack is required to test the core idea.',
-        'why.card2.p': 'The pilot is designed to stay lean so the gym can evaluate the opportunity before investing in heavier systems or internal process changes.',
-        'fit.h2': 'Who this fits best',
-        'fit.p': 'ICP Beacon is built for operators who want something clear, practical, and easy to trial.',
-        'fit.good.h3': 'Good fit',
-        'fit.good.li1': 'Independent gyms and boutique studios.',
-        'fit.good.li2': 'Operators with years of accumulated leads or former members.',
-        'fit.good.li3': 'Teams that want a lean pilot before any heavier commitment.',
-        'fit.good.li4': 'Owners who value simplicity over another complicated growth tool.',
-        'fit.bad.h3': 'Probably not a fit',
-        'fit.bad.li1': 'New gyms with little or no historical lead database.',
-        'fit.bad.li2': 'Operators looking for a full CRM replacement or complex growth stack.',
-        'fit.bad.li3': 'Teams that want a custom enterprise rollout from day one.',
-        'fit.bad.li4': 'Businesses without clear ownership of their existing contact lists.',
-        'faq.h2': 'Common questions',
-        'faq.p': 'The pilot is intentionally narrow. Keeping the scope tight makes it easier to decide fast.',
-        'faq.q1.h3': 'What do you need from me?',
-        'faq.q1.p': 'Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.',
-        'faq.q2.h3': 'How does pricing work?',
-        'faq.q2.p': 'Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.',
-        'faq.q3.h3': 'Does this work in my country?',
-        'faq.q3.p': 'Yes. We’re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.',
+        'why.card1.label': 'Better use of existing demand', 'why.card1.h3': 'Old contacts are often the most overlooked asset.', 'why.card1.p': 'If a gym has already generated interest once, there may still be recoverable value sitting in old enquiries, failed trials, and former memberships.',
+        'why.card2.label': 'Less operational friction', 'why.card2.h3': 'No new software stack is required to test the core idea.', 'why.card2.p': 'The pilot is designed to stay lean so the gym can evaluate the opportunity before investing in heavier systems or internal process changes.',
+        'fit.h2': 'Who this fits best', 'fit.p': 'ICP Beacon is built for operators who want something clear, practical, and easy to trial.',
+        'fit.good.h3': 'Good fit', 'fit.good.li1': 'Independent gyms and boutique studios.', 'fit.good.li2': 'Operators with years of accumulated leads or former members.', 'fit.good.li3': 'Teams that want a lean pilot before any heavier commitment.', 'fit.good.li4': 'Owners who value simplicity over another complicated growth tool.',
+        'fit.bad.h3': 'Probably not a fit', 'fit.bad.li1': 'New gyms with little or no historical lead database.', 'fit.bad.li2': 'Operators looking for a full CRM replacement or complex growth stack.', 'fit.bad.li3': 'Teams that want a custom enterprise rollout from day one.', 'fit.bad.li4': 'Businesses without clear ownership of their existing contact lists.',
+        'faq.h2': 'Common questions', 'faq.p': 'The pilot is intentionally narrow. Keeping the scope tight makes it easier to decide fast.',
+        'faq.q1.h3': 'What do you need from me?', 'faq.q1.p': 'Just a CSV export of your old leads or ex-members. We handle the setup, outreach, and qualification from there.',
+        'faq.q2.h3': 'How does pricing work?', 'faq.q2.p': 'Performance-only. You pay nothing upfront. We agree on a fee per booked conversation or a rev-share on memberships sold. No result = no invoice.',
+        'faq.q3.h3': 'Does this work in my country?', 'faq.q3.p': 'Yes. We\'re currently running pilots with gyms in Spain and the US East Coast. As long as you have a list and sell memberships, we can test it.',
+        'pilot.scarcity.text': 'Only reviewing 3 new gyms this month — we keep pilots small to give each one proper attention.',
+        'pilot.scarcity.badge': '🔒 Limited spots',
         'form.eyebrow': 'Free pilot application',
-        'form.h2': 'Apply for a free pilot.',
-        'form.p': 'Takes 2 minutes. We review every application and reply within 24h. No commitment required.',
-        'form.li1': 'Best for gyms with 200+ contacts in their existing database.',
-        'form.li2': 'Performance-based — you only pay if we produce results.',
-        'form.li3': 'No new software, no contracts, no setup fees.',
+        'form.h2': 'Apply in 2 minutes. We reply within 24h.',
+        'form.p': 'No commitment. No upfront cost. We review every application and only take on gyms where we\'re confident we can produce results.',
+        'form.perk1.label': 'Just 4 fields', 'form.perk1.desc': 'Name, email, gym name, and database size. That\'s it — no lengthy intake.',
+        'form.perk2.label': '24h reply guaranteed', 'form.perk2.desc': 'Every application gets a personal response — not an automated sequence.',
+        'form.perk3.label': 'No cost, no contract', 'form.perk3.desc': 'Applying doesn\'t commit you to anything. You decide after we talk.',
+        'form.perk4.label': 'Performance-based only', 'form.perk4.desc': 'You pay per booked conversation or rev-share. No result = no invoice.',
+        'form.promise.strong': 'Oli replies personally.', 'form.promise.text': ' Not a VA, not a bot. You\'ll hear back within 24 hours with a clear yes or a reason why it\'s not the right fit yet.',
         'footer.tagline': 'Lean reactivation for gyms and studios. No result, no fee.',
-        'footer.privacy': 'Privacy policy',
-        'footer.terms': 'Terms of use',
-        'modal.privacy.title': 'Privacy policy',
-        'modal.privacy.s1h': 'Overview',
-        'modal.privacy.s1p': 'This website is intended to collect inbound interest from businesses that want to learn more about a pilot service related to member or lead reactivation.',
-        'modal.privacy.s2h': 'Information collected',
-        'modal.privacy.s2p': 'When a visitor submits the embedded application form, the information they choose to provide may include business contact details, business context, and qualification answers relevant to the requested pilot.',
-        'modal.privacy.s3h': 'Purpose of processing',
-        'modal.privacy.s3p': 'Submitted information is used only to review whether the applicant is a suitable fit, respond to the request, and manage follow-up conversations related to the pilot.',
-        'modal.privacy.s4h': 'Legal basis',
-        'modal.privacy.s4p': 'Information is processed on the basis of pre-contractual steps initiated by the visitor and, where applicable, legitimate interest in reviewing and responding to business enquiries.',
-        'modal.privacy.s5h': 'Data minimisation',
-        'modal.privacy.s5p': 'Only the information necessary to understand the enquiry and assess fit should be submitted. Sensitive personal information should not be entered through the form.',
-        'modal.privacy.s6h': 'Third-party services',
-        'modal.privacy.s6p': 'This site uses an embedded third-party form provider to display and manage the application form. Information submitted through the form may be processed through that provider according to its own infrastructure and terms.',
-        'modal.privacy.s7h': 'Retention',
-        'modal.privacy.s7p': 'Information is retained only for as long as reasonably necessary to manage the enquiry, evaluate the pilot opportunity, and comply with applicable legal obligations.',
-        'modal.privacy.s8h': 'Rights',
-        'modal.privacy.s8p': 'Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection where relevant.',
-        'modal.privacy.s9h': 'International processing',
-        'modal.privacy.s9p': 'Depending on the tools used to operate this site and manage applications, information may be processed in jurisdictions different from the visitor’s own location, subject to applicable safeguards where required.',
-        'modal.privacy.s10h': 'Policy updates',
-        'modal.privacy.s10p': 'This privacy policy may be updated from time to time to reflect changes in the website, the qualification process, or legal requirements.',
-        'modal.terms.title': 'Terms of use',
-        'modal.terms.s1h': 'Use of the site',
-        'modal.terms.s1p': 'This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.',
-        'modal.terms.s2h': 'No promise of results',
-        'modal.terms.s2p': 'Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results.',
-        'modal.terms.s3h': 'Eligibility',
-        'modal.terms.s3p': 'The form and related materials are intended for businesses and authorised representatives acting on behalf of a business, not for personal consumer use.',
-        'modal.terms.s4h': 'Submitted information',
-        'modal.terms.s4p': 'By submitting the application form, the visitor confirms that the information provided is accurate to the best of their knowledge and that they are authorised to submit it for business evaluation purposes.',
-        'modal.terms.s5h': 'Intellectual property',
-        'modal.terms.s5p': 'All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights unless otherwise stated.',
-        'modal.terms.s6h': 'Acceptable use',
-        'modal.terms.s6p': 'Visitors must not misuse the site, attempt unauthorised access, interfere with site functionality, or submit unlawful, misleading, or harmful content.',
-        'modal.terms.s7h': 'Third-party tools',
-        'modal.terms.s7p': 'The site may rely on third-party services for forms, analytics, hosting, or related functionality. Availability and performance may depend in part on those services.',
-        'modal.terms.s8h': 'Changes and availability',
-        'modal.terms.s8p': 'The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.',
-        'modal.terms.s9h': 'Limitation',
-        'modal.terms.s9p': 'To the fullest extent permitted by law, the site is provided on an “as is” and “as available” basis, without warranties of any kind.',
+        'footer.privacy': 'Privacy policy', 'footer.terms': 'Terms of use',
+        'modal.privacy.title': 'Privacy policy', 'modal.privacy.s1h': 'Overview', 'modal.privacy.s1p': 'This website is intended to collect inbound interest from businesses that want to learn more about a pilot service related to member or lead reactivation.',
+        'modal.privacy.s2h': 'Information collected', 'modal.privacy.s2p': 'When a visitor submits the embedded application form, the information they choose to provide may include business contact details, business context, and qualification answers relevant to the requested pilot.',
+        'modal.privacy.s3h': 'Purpose of processing', 'modal.privacy.s3p': 'Submitted information is used only to review whether the applicant is a suitable fit, respond to the request, and manage follow-up conversations related to the pilot.',
+        'modal.privacy.s4h': 'Legal basis', 'modal.privacy.s4p': 'Information is processed on the basis of pre-contractual steps initiated by the visitor and, where applicable, legitimate interest in reviewing and responding to business enquiries.',
+        'modal.privacy.s5h': 'Data minimisation', 'modal.privacy.s5p': 'Only the information necessary to understand the enquiry and assess fit should be submitted.',
+        'modal.privacy.s6h': 'Third-party services', 'modal.privacy.s6p': 'This site uses an embedded third-party form provider. Information submitted may be processed through that provider according to its own terms.',
+        'modal.privacy.s7h': 'Retention', 'modal.privacy.s7p': 'Information is retained only for as long as reasonably necessary to manage the enquiry and comply with applicable legal obligations.',
+        'modal.privacy.s8h': 'Rights', 'modal.privacy.s8p': 'Visitors may have rights under applicable privacy laws, including the right to request access, correction, deletion, restriction, or objection.',
+        'modal.privacy.s9h': 'International processing', 'modal.privacy.s9p': 'Information may be processed in jurisdictions different from the visitor\'s own location, subject to applicable safeguards.',
+        'modal.privacy.s10h': 'Policy updates', 'modal.privacy.s10p': 'This privacy policy may be updated from time to time to reflect changes in the website or legal requirements.',
+        'modal.terms.title': 'Terms of use', 'modal.terms.s1h': 'Use of the site', 'modal.terms.s1p': 'This website is provided for general informational purposes and to allow businesses to express interest in a pilot service. Use of the site does not create a client relationship or guarantee acceptance into any pilot.',
+        'modal.terms.s2h': 'No promise of results', 'modal.terms.s2p': 'Nothing on this website should be interpreted as a guarantee of performance, business outcomes, lead volume, memberships, or commercial results.',
+        'modal.terms.s3h': 'Eligibility', 'modal.terms.s3p': 'The form and related materials are intended for businesses and authorised representatives, not for personal consumer use.',
+        'modal.terms.s4h': 'Submitted information', 'modal.terms.s4p': 'By submitting the application form, the visitor confirms that the information provided is accurate and that they are authorised to submit it for business evaluation purposes.',
+        'modal.terms.s5h': 'Intellectual property', 'modal.terms.s5p': 'All content, branding, layout, written copy, and visual elements on this site are protected by applicable intellectual property rights.',
+        'modal.terms.s6h': 'Acceptable use', 'modal.terms.s6p': 'Visitors must not misuse the site, attempt unauthorised access, or submit unlawful, misleading, or harmful content.',
+        'modal.terms.s7h': 'Third-party tools', 'modal.terms.s7p': 'The site may rely on third-party services for forms, analytics, or hosting. Availability may depend in part on those services.',
+        'modal.terms.s8h': 'Changes and availability', 'modal.terms.s8p': 'The site, its content, and any pilot details may be modified, paused, or withdrawn at any time without notice.',
+        'modal.terms.s9h': 'Limitation', 'modal.terms.s9p': 'To the fullest extent permitted by law, the site is provided on an "as is" and "as available" basis, without warranties of any kind.',
       },
       es: {
-        'nav.howItWorks': 'Cómo funciona',
-        'nav.pilot': 'Piloto',
-        'nav.applyNow': 'Solicitar ahora',
+        'nav.howItWorks': 'Cómo funciona', 'nav.pilot': 'Piloto', 'nav.applyNow': 'Solicitar ahora',
         'hero.eyebrow': 'Reactivación de socios de gimnasio',
         'hero.h1': 'Ya pagaste por esos contactos. Es hora de sacarles partido.',
         'hero.p': 'Ejecutamos un piloto corto de reactivación por SMS sobre tu lista fría — ex-socios, consultas antiguas, pruebas caducadas. Sin software nuevo. Sin coste inicial. Solo pagas si funciona.',
-        'hero.cta1': 'Solicitar el piloto',
-        'hero.cta2': 'Ver cómo funciona',
-        'hero.meta1': 'Sin coste inicial',
-        'hero.meta2': 'Para gimnasios y estudios',
-        'hero.meta3': 'Resultados en 2–3 semanas',
-        'card.inputLabel': 'Qué necesitamos',
-        'card.inputValue': 'Tu lista fría',
+        'hero.cta1': 'Solicitar el piloto', 'hero.cta2': 'Ver cómo funciona',
+        'hero.meta1': 'Sin coste inicial', 'hero.meta2': 'Para gimnasios y estudios', 'hero.meta3': 'Resultados en 2–3 semanas',
+        'card.inputLabel': 'Qué necesitamos', 'card.inputValue': 'Tu lista fría',
         'card.inputSub': 'Un exportado de contactos antiguos, ex-socios o pruebas fallidas.',
-        'card.exec.label': 'Ejecución',
-        'card.exec.title': 'Piloto de reactivación SMS',
-        'card.exec.sub': 'Gestionamos el contacto. Tú solo revisas las respuestas.',
-        'card.focus.label': 'Objetivo',
-        'card.focus.title': 'Conversaciones reservadas',
-        'card.focus.sub': 'Buscamos intención de visita o llamadas sobre membresías.',
-        'card.result.label': 'Resultado',
-        'card.result.title': 'Basado en rendimiento',
-        'card.result.sub': 'Solo pagas cuando producimos un resultado.',
-        'card.input2.label': 'Entrada',
-        'card.input2.title': 'Tu lista fría',
-        'card.input2.sub': 'Un exportado de contactos antiguos, ex-socios o pruebas fallidas.',
+        'card.exec.label': 'Ejecución', 'card.exec.title': 'Piloto de reactivación SMS', 'card.exec.sub': 'Gestionamos el contacto. Tú solo revisas las respuestas.',
+        'card.focus.label': 'Objetivo', 'card.focus.title': 'Conversaciones reservadas', 'card.focus.sub': 'Buscamos intención de visita o llamadas sobre membresías.',
+        'card.result.label': 'Resultado', 'card.result.title': 'Basado en rendimiento', 'card.result.sub': 'Solo pagas cuando producimos un resultado.',
+        'card.input2.label': 'Plazo', 'card.input2.title': '2–3 semanas', 'card.input2.sub': 'Desde la subida de la lista hasta las primeras conversaciones.',
         'pain.h2': '¿Te suena familiar?',
-        'pain.card1.h3': 'Esa lista de hace 8 meses',
-        'pain.card1.p': 'Dejaste de llamar a esos 300 contactos. La recepción siguió adelante. La base de datos simplemente... está ahí.',
-        'pain.card2.h3': 'Newsletters que no llegan a ningún lado',
-        'pain.card2.p': 'Lo has intentado con el boletín. 4 aperturas, cero respuestas, una baja.',
-        'pain.card3.h3': 'El coste de captación no deja de subir',
-        'pain.card3.p': 'Cada nuevo contacto cuesta más. Mientras tanto, las personas que ya conocen tu gimnasio están siendo ignoradas.',
+        'pain.card1.h3': 'Esa lista de hace 8 meses', 'pain.card1.p': 'Dejaste de llamar a esos 300 contactos. La recepción siguió adelante. La base de datos simplemente... está ahí.',
+        'pain.card2.h3': 'Newsletters que no llegan a ningún lado', 'pain.card2.p': 'Lo has intentado con el boletín. 4 aperturas, cero respuestas, una baja.',
+        'pain.card3.h3': 'El coste de captación no deja de subir', 'pain.card3.p': 'Cada nuevo contacto cuesta más. Mientras tanto, las personas que ya conocen tu gimnasio están siendo ignoradas.',
         'pain.callout': 'Esa lista no está muerta. Solo necesita el mensaje correcto.',
         'pain.stat1': 'tasa media de respuesta por SMS en listas frías de reactivación (vs. 3–8% por email)',
         'pain.stat2': 'tiempo típico desde la subida de la lista hasta las primeras conversaciones reservadas',
-        'how.h2': 'Cómo funciona el piloto',
-        'how.p': 'Tres pasos. Sin plataformas nuevas. Sin procesos de incorporación largos. Solo una prueba enfocada de lo que puede producir tu lista fría.',
-        'how.step1.h3': 'Envínos tu lista',
-        'how.step1.p': 'Un exportado CSV sencillo de contactos antiguos o ex-socios. No se necesita ningún formato especial. Lo revisamos y confirmamos idoneidad en 24h.',
-        'how.step2.h3': 'Ejecutamos el piloto',
-        'how.step2.p': 'Configuramos y enviamos una secuencia de SMS dirigida. Gestionamos las respuestas, cualificamos el interés y buscamos una visita o llamada reservada.',
-        'how.step3.h3': 'Pagas por resultados',
-        'how.step3.p': 'Si el piloto produce conversaciones reservadas o consultas de membresía, facturamos. Si no, no debes nada.',
-        'about.eyebrow': 'Quién hay detrás',
-        'about.h2': 'Construido de forma lean, a propósito.',
+        'how.h2': 'Cómo funciona el piloto', 'how.p': 'Tres pasos. Sin plataformas nuevas. Sin onboarding largo. Solo una prueba enfocada de lo que puede producir tu lista fría.',
+        'how.step1.h3': 'Envíanos tu lista', 'how.step1.p': 'Un exportado CSV sencillo. No se necesita ningún formato especial. Lo revisamos y confirmamos idoneidad en 24h.',
+        'how.step2.h3': 'Ejecutamos el piloto', 'how.step2.p': 'Configuramos y enviamos una secuencia de SMS dirigida. Gestionamos las respuestas y buscamos una visita o llamada reservada.',
+        'how.step3.h3': 'Pagas por resultados', 'how.step3.p': 'Si el piloto produce conversaciones reservadas o consultas de membresía, facturamos. Si no, no debes nada.',
+        'about.eyebrow': 'Quién hay detrás', 'about.h2': 'Construido de forma lean, a propósito.',
         'about.p1': 'Soy Oli, un ingeniero de software con 12 años construyendo productos para empresas que necesitaban hacer más con menos. He visto de primera mano cómo la mayoría de los gimnasios tienen un activo oculto en su base de datos — y ningún sistema para activarlo.',
-        'about.p2': 'ICP Beacon es la versión lean de lo que usan los equipos de ventas enterprise, adaptada para propietarios de gimnasios independientes que no tienen departamento de marketing ni tiempo para aprender nuevas plataformas.',
-        'about.tag1': '12 años en tecnología',
-        'about.tag2': 'Emprendedor activo',
-        'about.tag3': 'Enfoque lean-first',
-        'about.tag4': 'Basado en Europa Occidental',
+        'about.p2': 'ICP Beacon es la versión lean de lo que usan los equipos de ventas enterprise, adaptada para propietarios de gimnasios independientes que no tienen departamento de marketing.',
+        'about.tag1': '12 años en tecnología', 'about.tag2': 'Emprendedor activo', 'about.tag3': 'Enfoque lean-first', 'about.tag4': 'Basado en Europa Occidental',
         'about.cta': '→ Solicitar el piloto',
         'why.h2': 'Por qué es mejor que buscar más tráfico frío',
-        'why.p': 'La mayoría de los gimnasios siguen pagando para captar nueva atención mientras las consultas antiguas y los ex-socios desaparecen en segundo plano. La reactivación es más rápida porque el público ya conoce la marca.',
-        'why.card1.label': 'Mejor uso de la demanda existente',
-        'why.card1.h3': 'Los contactos antiguos suelen ser el activo más ignorado.',
-        'why.card1.p': 'Si un gimnasio ya ha generado interés una vez, puede haber valor recuperable en consultas antiguas, pruebas fallidas y ex-membresías.',
-        'why.card2.label': 'Menos fricción operativa',
-        'why.card2.h3': 'No se necesita ninguna plataforma nueva para probar la idea central.',
-        'why.card2.p': 'El piloto está diseñado para mantenerse ligero, para que el gimnasio pueda evaluar la oportunidad antes de invertir en sistemas más pesados.',
-        'fit.h2': 'A quién le encaja mejor',
-        'fit.p': 'ICP Beacon está pensado para operadores que quieren algo claro, práctico y fácil de probar.',
-        'fit.good.h3': 'Buen encaje',
-        'fit.good.li1': 'Gimnasios independientes y estudios boutique.',
-        'fit.good.li2': 'Operadores con años de contactos acumulados o ex-socios.',
-        'fit.good.li3': 'Equipos que quieren un piloto ligero antes de comprometerse más.',
-        'fit.good.li4': 'Propietarios que valoran la simplicidad sobre otra herramienta de crecimiento complicada.',
-        'fit.bad.h3': 'Probablemente no encaja',
-        'fit.bad.li1': 'Gimnasios nuevos con poca o ninguna base de datos histórica.',
-        'fit.bad.li2': 'Operadores que buscan reemplazar su CRM o una solución compleja de crecimiento.',
-        'fit.bad.li3': 'Equipos que quieren un despliegue enterprise personalizado desde el primer día.',
-        'fit.bad.li4': 'Empresas sin titularidad clara sobre sus listas de contactos existentes.',
-        'faq.h2': 'Preguntas frecuentes',
-        'faq.p': 'El piloto es intencionalmente acotado. Mantener el alcance ajustado facilita tomar una decisión rápida.',
-        'faq.q1.h3': '¿Qué necesitas de mí?',
-        'faq.q1.p': 'Solo un exportado CSV de tus contactos antiguos o ex-socios. Nosotros nos encargamos de la configuración, el contacto y la cualificación.',
-        'faq.q2.h3': '¿Cómo funciona el precio?',
-        'faq.q2.p': 'Solo por rendimiento. No pagas nada por adelantado. Acordamos una tarifa por conversación reservada o un reparto de ingresos por membresías vendidas. Sin resultado = sin factura.',
-        'faq.q3.h3': '¿Funciona en mi país?',
-        'faq.q3.p': 'Sí. Actualmente ejecutamos pilotos con gimnasios en España y la Costa Este de EE. UU. Mientras tengas una lista y vendas membresías, podemos probarlo.',
+        'why.p': 'La mayoría de los gimnasios siguen pagando para captar nueva atención mientras las consultas antiguas desaparecen en segundo plano. La reactivación es más rápida porque el público ya conoce la marca.',
+        'why.card1.label': 'Mejor uso de la demanda existente', 'why.card1.h3': 'Los contactos antiguos suelen ser el activo más ignorado.', 'why.card1.p': 'Si un gimnasio ya ha generado interés una vez, puede haber valor recuperable en consultas antiguas, pruebas fallidas y ex-membresías.',
+        'why.card2.label': 'Menos fricción operativa', 'why.card2.h3': 'No se necesita ninguna plataforma nueva para probar la idea central.', 'why.card2.p': 'El piloto está diseñado para mantenerse ligero, para que el gimnasio pueda evaluar la oportunidad antes de invertir en sistemas más pesados.',
+        'fit.h2': 'A quién le encaja mejor', 'fit.p': 'ICP Beacon está pensado para operadores que quieren algo claro, práctico y fácil de probar.',
+        'fit.good.h3': 'Buen encaje', 'fit.good.li1': 'Gimnasios independientes y estudios boutique.', 'fit.good.li2': 'Operadores con años de contactos acumulados o ex-socios.', 'fit.good.li3': 'Equipos que quieren un piloto ligero antes de comprometerse más.', 'fit.good.li4': 'Propietarios que valoran la simplicidad sobre otra herramienta de crecimiento complicada.',
+        'fit.bad.h3': 'Probablemente no encaja', 'fit.bad.li1': 'Gimnasios nuevos con poca o ninguna base de datos histórica.', 'fit.bad.li2': 'Operadores que buscan reemplazar su CRM o una solución compleja.', 'fit.bad.li3': 'Equipos que quieren un despliegue enterprise personalizado desde el primer día.', 'fit.bad.li4': 'Empresas sin titularidad clara sobre sus listas de contactos.',
+        'faq.h2': 'Preguntas frecuentes', 'faq.p': 'El piloto es intencionalmente acotado. Mantener el alcance ajustado facilita tomar una decisión rápida.',
+        'faq.q1.h3': '¿Qué necesitas de mí?', 'faq.q1.p': 'Solo un exportado CSV de tus contactos antiguos o ex-socios. Nosotros nos encargamos de la configuración, el contacto y la cualificación.',
+        'faq.q2.h3': '¿Cómo funciona el precio?', 'faq.q2.p': 'Solo por rendimiento. No pagas nada por adelantado. Acordamos una tarifa por conversación reservada o un reparto de ingresos. Sin resultado = sin factura.',
+        'faq.q3.h3': '¿Funciona en mi país?', 'faq.q3.p': 'Sí. Actualmente ejecutamos pilotos con gimnasios en España y la Costa Este de EE. UU. Mientras tengas una lista y vendas membresías, podemos probarlo.',
+        'pilot.scarcity.text': 'Solo revisamos 3 gimnasios nuevos al mes — mantenemos los pilotos pequeños para dar atención adecuada a cada uno.',
+        'pilot.scarcity.badge': '🔒 Plazas limitadas',
         'form.eyebrow': 'Solicitud de piloto gratuito',
-        'form.h2': 'Solicita un piloto gratuito.',
-        'form.p': 'Tarda 2 minutos. Revisamos cada solicitud y respondemos en 24h. Sin compromiso.',
-        'form.li1': 'Ideal para gimnasios con 200+ contactos en su base de datos existente.',
-        'form.li2': 'Basado en rendimiento — solo pagas si producimos resultados.',
-        'form.li3': 'Sin software nuevo, sin contratos, sin tarifas de configuración.',
+        'form.h2': 'Solicita en 2 minutos. Respondemos en 24h.',
+        'form.p': 'Sin compromiso. Sin coste inicial. Revisamos cada solicitud y solo aceptamos gimnasios donde estamos seguros de que podemos producir resultados.',
+        'form.perk1.label': 'Solo 4 campos', 'form.perk1.desc': 'Nombre, email, nombre del gimnasio y tamaño de la base de datos. Nada más.',
+        'form.perk2.label': 'Respuesta en 24h garantizada', 'form.perk2.desc': 'Cada solicitud recibe una respuesta personal — no una secuencia automatizada.',
+        'form.perk3.label': 'Sin coste, sin contrato', 'form.perk3.desc': 'Solicitar no te compromete a nada. Decides después de hablar.',
+        'form.perk4.label': 'Solo basado en rendimiento', 'form.perk4.desc': 'Pagas por conversación reservada o reparto de ingresos. Sin resultado = sin factura.',
+        'form.promise.strong': 'Oli responde personalmente.', 'form.promise.text': ' No un asistente, no un bot. Recibirás respuesta en 24 horas con un sí claro o el motivo por el que aún no es el momento adecuado.',
         'footer.tagline': 'Reactivación lean para gimnasios y estudios. Sin resultado, sin coste.',
-        'footer.privacy': 'Política de privacidad',
-        'footer.terms': 'Términos de uso',
-        'modal.privacy.title': 'Política de privacidad',
-        'modal.privacy.s1h': 'Resumen',
-        'modal.privacy.s1p': 'Este sitio web está destinado a recopilar el interés de empresas que desean obtener más información sobre un servicio piloto relacionado con la reactivación de socios o contactos.',
-        'modal.privacy.s2h': 'Información recopilada',
-        'modal.privacy.s2p': 'Cuando un visitante envía el formulario de solicitud integrado, la información que elija proporcionar puede incluir datos de contacto empresariales, contexto de negocio y respuestas de cualificación relevantes para el piloto solicitado.',
-        'modal.privacy.s3h': 'Finalidad del tratamiento',
-        'modal.privacy.s3p': 'La información enviada se utiliza únicamente para revisar si el solicitante es un buen candidato, responder a la solicitud y gestionar las conversaciones de seguimiento relacionadas con el piloto.',
-        'modal.privacy.s4h': 'Base jurídica',
-        'modal.privacy.s4p': 'La información se trata sobre la base de pasos precontractuales iniciados por el visitante y, cuando corresponda, el interés legítimo en revisar y responder a consultas empresariales.',
-        'modal.privacy.s5h': 'Minimización de datos',
-        'modal.privacy.s5p': 'Solo debe enviarse la información necesaria para entender la consulta y evaluar el encaje. No debe introducirse información personal sensible a través del formulario.',
-        'modal.privacy.s6h': 'Servicios de terceros',
-        'modal.privacy.s6p': 'Este sitio utiliza un proveedor de formularios de terceros integrado. La información enviada puede ser procesada por ese proveedor según su propia infraestructura y condiciones.',
-        'modal.privacy.s7h': 'Retención',
-        'modal.privacy.s7p': 'La información se conserva solo durante el tiempo razonablemente necesario para gestionar la consulta, evaluar la oportunidad del piloto y cumplir con las obligaciones legales aplicables.',
-        'modal.privacy.s8h': 'Derechos',
-        'modal.privacy.s8p': 'Los visitantes pueden tener derechos bajo las leyes de privacidad aplicables, incluido el derecho a solicitar acceso, rectificación, supresión, limitación u oposición cuando sea pertinente.',
-        'modal.privacy.s9h': 'Procesamiento internacional',
-        'modal.privacy.s9p': 'Dependiendo de las herramientas utilizadas, la información puede procesarse en jurisdicciones distintas a la del visitante, sujeto a las salvaguardas aplicables.',
-        'modal.privacy.s10h': 'Actualizaciones de la política',
-        'modal.privacy.s10p': 'Esta política de privacidad puede actualizarse periódicamente para reflejar cambios en el sitio web, el proceso de cualificación o los requisitos legales.',
-        'modal.terms.title': 'Términos de uso',
-        'modal.terms.s1h': 'Uso del sitio',
-        'modal.terms.s1p': 'Este sitio web se proporciona con fines informativos generales y para permitir que las empresas expresen su interés en un servicio piloto. El uso del sitio no crea una relación de cliente ni garantiza la aceptación en ningún piloto.',
-        'modal.terms.s2h': 'Sin promesa de resultados',
-        'modal.terms.s2p': 'Nada en este sitio web debe interpretarse como una garantía de rendimiento, resultados empresariales, volumen de contactos, membresías o resultados comerciales.',
-        'modal.terms.s3h': 'Elegibilidad',
-        'modal.terms.s3p': 'El formulario y los materiales relacionados están destinados a empresas y representantes autorizados que actúen en nombre de una empresa, no para uso personal de consumidores.',
-        'modal.terms.s4h': 'Información enviada',
-        'modal.terms.s4p': 'Al enviar el formulario de solicitud, el visitante confirma que la información proporcionada es correcta según su leal saber y entender y que está autorizado a enviarla con fines de evaluación empresarial.',
-        'modal.terms.s5h': 'Propiedad intelectual',
-        'modal.terms.s5p': 'Todo el contenido, la marca, el diseño, el texto y los elementos visuales de este sitio están protegidos por los derechos de propiedad intelectual aplicables.',
-        'modal.terms.s6h': 'Uso aceptable',
-        'modal.terms.s6p': 'Los visitantes no deben hacer un uso indebido del sitio, intentar accesos no autorizados, interferir con la funcionalidad del sitio ni enviar contenido ilícito, engañoso o dañino.',
-        'modal.terms.s7h': 'Herramientas de terceros',
-        'modal.terms.s7p': 'El sitio puede depender de servicios de terceros para formularios, análisis, alojamiento u otras funcionalidades. La disponibilidad puede depender en parte de esos servicios.',
-        'modal.terms.s8h': 'Cambios y disponibilidad',
-        'modal.terms.s8p': 'El sitio, su contenido y los detalles del piloto pueden modificarse, pausarse o retirarse en cualquier momento sin previo aviso.',
-        'modal.terms.s9h': 'Limitación de responsabilidad',
-        'modal.terms.s9p': 'En la medida máxima permitida por la ley, el sitio se proporciona “tal cual” y “según disponibilidad”, sin garantías de ningún tipo.',
+        'footer.privacy': 'Política de privacidad', 'footer.terms': 'Términos de uso',
+        'modal.privacy.title': 'Política de privacidad', 'modal.privacy.s1h': 'Resumen', 'modal.privacy.s1p': 'Este sitio web está destinado a recopilar el interés de empresas que desean obtener más información sobre un servicio piloto relacionado con la reactivación de socios o contactos.',
+        'modal.privacy.s2h': 'Información recopilada', 'modal.privacy.s2p': 'Cuando un visitante envía el formulario, la información puede incluir datos de contacto empresariales, contexto de negocio y respuestas de cualificación.',
+        'modal.privacy.s3h': 'Finalidad del tratamiento', 'modal.privacy.s3p': 'La información enviada se utiliza únicamente para revisar si el solicitante es un buen candidato y gestionar las conversaciones de seguimiento.',
+        'modal.privacy.s4h': 'Base jurídica', 'modal.privacy.s4p': 'La información se trata sobre la base de pasos precontractuales iniciados por el visitante y el interés legítimo en responder a consultas empresariales.',
+        'modal.privacy.s5h': 'Minimización de datos', 'modal.privacy.s5p': 'Solo debe enviarse la información necesaria para entender la consulta y evaluar el encaje.',
+        'modal.privacy.s6h': 'Servicios de terceros', 'modal.privacy.s6p': 'Este sitio utiliza un proveedor de formularios de terceros. La información enviada puede ser procesada por ese proveedor según sus propios términos.',
+        'modal.privacy.s7h': 'Retención', 'modal.privacy.s7p': 'La información se conserva solo durante el tiempo necesario para gestionar la consulta y cumplir con las obligaciones legales aplicables.',
+        'modal.privacy.s8h': 'Derechos', 'modal.privacy.s8p': 'Los visitantes pueden tener derechos bajo las leyes de privacidad aplicables, incluyendo acceso, rectificación, supresión o limitación.',
+        'modal.privacy.s9h': 'Procesamiento internacional', 'modal.privacy.s9p': 'La información puede procesarse en jurisdicciones distintas a la del visitante, sujeto a las salvaguardas aplicables.',
+        'modal.privacy.s10h': 'Actualizaciones', 'modal.privacy.s10p': 'Esta política puede actualizarse periódicamente para reflejar cambios en el sitio o requisitos legales.',
+        'modal.terms.title': 'Términos de uso', 'modal.terms.s1h': 'Uso del sitio', 'modal.terms.s1p': 'Este sitio se proporciona con fines informativos y para permitir que las empresas expresen su interés en un piloto. El uso del sitio no crea una relación de cliente.',
+        'modal.terms.s2h': 'Sin promesa de resultados', 'modal.terms.s2p': 'Nada en este sitio debe interpretarse como una garantía de rendimiento, resultados empresariales o resultados comerciales.',
+        'modal.terms.s3h': 'Elegibilidad', 'modal.terms.s3p': 'El formulario está destinado a empresas y representantes autorizados, no para uso personal de consumidores.',
+        'modal.terms.s4h': 'Información enviada', 'modal.terms.s4p': 'Al enviar el formulario, el visitante confirma que la información es correcta y que está autorizado a enviarla.',
+        'modal.terms.s5h': 'Propiedad intelectual', 'modal.terms.s5p': 'Todo el contenido y los elementos visuales de este sitio están protegidos por derechos de propiedad intelectual.',
+        'modal.terms.s6h': 'Uso aceptable', 'modal.terms.s6p': 'Los visitantes no deben hacer un uso indebido del sitio ni enviar contenido ilícito o dañino.',
+        'modal.terms.s7h': 'Herramientas de terceros', 'modal.terms.s7p': 'El sitio puede depender de servicios de terceros para formularios, análisis u otras funcionalidades.',
+        'modal.terms.s8h': 'Cambios y disponibilidad', 'modal.terms.s8p': 'El sitio y los detalles del piloto pueden modificarse o retirarse en cualquier momento sin previo aviso.',
+        'modal.terms.s9h': 'Limitación de responsabilidad', 'modal.terms.s9p': 'En la medida máxima permitida por la ley, el sitio se proporciona "tal cual", sin garantías de ningún tipo.',
       }
     };
 
-    /* ── LANGUAGE SWITCHER ── */
     const langBtns = document.querySelectorAll('.lang-btn');
-
     const applyLang = (lang) => {
       root.setAttribute('lang', lang);
       root.setAttribute('data-lang', lang);
@@ -1612,7 +973,6 @@
         btn.setAttribute('aria-pressed', String(active));
       });
     };
-
     langBtns.forEach(btn => btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang'))));
     applyLang('en');
   })();
