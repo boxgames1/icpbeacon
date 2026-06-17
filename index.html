@@ -253,8 +253,16 @@
       .about-photo-wrap { justify-self: center; }
       .about-photo { max-width: 240px; width: 240px; }
     }
+    @media (max-width: 455px) {
+        .brand img.logo {
+            width: 110px;
+        }
+       .theme-toggle {
+            display: none;
+       }
+    }
     @media (max-width: 760px) {
-      .nav { min-height: auto; flex-direction: row; flex-wrap: wrap; align-items: center; padding: var(--space-3) 0; gap: var(--space-2); }
+      .nav { min-height: auto; flex-direction: row; align-items: center; padding: var(--space-3) 0; gap: var(--space-2); }
       .brand { flex: 1 1 auto; }
       .brand img.logo { width: 130px; }
       .nav-links { display: flex; align-items: center; gap: var(--space-2); flex-wrap: nowrap; }
